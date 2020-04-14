@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>HTML Academy: Пинк</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <h1 class="page-header__title page-header__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    <div class="page-header__logo-image-wrapper">
+      <a href="index.html">
+        <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Приложение Pink">
+      </a>
+    </div>
+    <nav class="main-nav">
+      <button type="submit" class="main-nav__toggle" aria-label="Открыть меню"></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item site-list__item">
+            <a href="photo.html">фотографии</a>
+          </li>
+          <li class="main-nav__item site-list__item">
+            <a>Конкурс</a>
+          </li>
+          <li class="main-nav__item site-list__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive"> html academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <form class="form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="form__wrapper">
+        <h2 class="visually-hidden">Анкета для участия</h2>
+        <b class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</b>
+        <div class="form__full-name">
+          <label class="form__family" class="form__label" for="family">Фамилия</label>
+          <input class="form__family-area" type="text" name="family" id="family" placeholder="Укажите фамилию*">
+          <label class="form__name" for="name">Имя</label>
+          <input class="form__name-area" type="text" name="name" id="name" placeholder="Введите ваше имя*">
+          <label class="form__patronymic" for="patronymic">Отчество</label>
+          <input class="form__patronymic-area" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже*">
+        </div>
+        <div class="form__achievements">
+          <b class="form__achievements-title">Ваши безбашенные достижения в путешествии</b>
+          <label class="form__selfi" for="selfi">
+            Сделал селфи с акулой
+            <input  type="checkbox" name="selfi" id="selfi" ckecked>
+          </label>
+          <label class="form__beech" for="beech">
+            Обгорел на пляже
+            <input type="checkbox" name="beech" id="beech" checked>
+          </label>
+          <label class="form__chuck" for="chuck">
+            Видел Чака Норриса
+            <input type="checkbox" name="chuck" id="chuck">
+          </label>
+          <label class="form__souvenirs" for="souvenirs">
+            Накупил сувениров
+            <input type="checkbox" name="souvenirs" id="souvenirs">
+          </label>
+          <label class="form__tower" for="tower">
+            Удержал башню
+            <input type="checkbox" name="tower" id="tower" checked>
+          </label>
+          <label class="form__hotel" for="hotel">
+            Разгромил отель
+            <input type="checkbox" name="hotel" id="hotel">
+          </label>
+        </div>
+        <div class="form__contacts">
+          <h3 class="form__contacts-title">Контактная информация</h3>
+          <label class="form__telefon" for="telefon-number">номер телефона</label>
+          <input class="form__telefon-area" type="text" name="telefon-number" id="telefon-number" placeholder="Номер, пожалуйста">
+          <label class="form__email" for="email">Адрес почты</label>
+          <input class="form__email-area" type="text" name="email" id="email" placeholder="Введите почту*">
+        </div>
+        <div class="form__os">
+          <b class="form__title-os">С каким приложением путешествовали?</b>
+          <label class="form__ios" for="ios">
+            Pink для iOS
+            <input type="radio" name="ios" id="ios" checked>
+          </label>
+          <label class="form__adroid" for="android">
+            Pink на Android
+            <input type="radio" name="android" id="android" checked>
+          </label>
+          <label class="form__windows" for="windows">
+            Windows Phone
+            <input type="radio" name="windows" id="windows">
+          </label>
+        </div>
+        <div class="form__emotions">
+          <b class="form__emotions-title">Опишите свои эмоции</b>
+          <textarea class="form__emotions-description" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </div>
+        <button type="submit" class="form__button button">Отправить форму</button>
+        <p class="form__must">
+          <sup class="form__must">*</sup>— обязательные поля
+        </p>
+      </div>
+    </form>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__logo-image-wrapper">
+      <a href="index.html">
+        <img class="page-footer__logo-image" src="http://placehold.it/75x22" width="75" height="22" alt="Приложение Pink">
+      </a>
+    </div>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="#" aria-label="Вконтакте"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--fb" href="#" aria-label="Фейсбук"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#" aria-label="Youtube"></a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано</b>
+      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="htmlacademy"></a>
+    </div>
+  </footer>
+</body>
+
+</html>
