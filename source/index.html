@@ -1,205 +1,271 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-	  <meta charset="utf-8">
-	  <meta name="viewport" content="width=device-width, initial-scale=1">
-	  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-	  <link rel="stylesheet" type="text/css" href="css/style.css">
-	  <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
-  	<header class="page-header">
-  		<a class="page-header__logo">
-  			<img class="page-header__logo-image" src="https://via.placeholder.com/50x100" width="100" height="50" alt="Приложение pink">
-  		</a>
-  		<nav class="main-nav">
-  			<button class="main-nav__toggle" type="button">Открыть меню</button>
-  			<div class="main-nav__wrapper">
-	  			<ul class="main-nav__list site-list">
-	  			<li class="site-list__item">
-	  				<a>Главная</a>
-	  			</li>
-	  			<li class="site-list__item">
-	  				<a href="photo.html">Фотографии</a>
-	  			</li>
-	  			<li class="site-list__item">
-	  				<a href="form.html">Конкурс</a>
-	  			</li>
-	  			<li class="site-list__item">
-	  				<a href="#">HTML Academy</a>
-	  			</li>
-	  			</ul>
-  			</div>
-  		</nav>
-  	</header>
 
-  	<main class="page-main">
+<head>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/picturefill.js" type="text/javascript"></script>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
 
-  		<section class="os-info">
-  			<div class="os-info__img">
-	  			<img src="#" width="256" height="288" alt="Скриншот айфона">
-	  		</div>
-	  		<div class="os-info__description">
-	  			<h1 class="visually-hidden">Приложение "Pink", расскрась свой мир в розовые тона</h1>
-	  			<b class="os-info__title">Взгляните на жизнь иначе!</b>
-	  			<a class="button button--header" href="#">Скачать приложение</a>
-	  			<ul class="os-info__list">
-	  				<li class="os-info__item os-info--apple"></li>
-	  				<li class="os-info__item os-info--android"></li>
-	  				<li class="os-info__item os-info--windows"></li>
-	  			</ul>
-	  			<p class="os-info__availability">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
-	  		</div>
-  		</section>
+<body>
+  <header class="page-header">
+    <div class="page-header__wrapper">
+    <nav class="main-nav main-nav--closed">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active-first">
+            <a class="page-header__logo">
+              <picture>
+                <source class="page-header__desktop-logo" media="(min-width:960px)" srcset="img/logo-pink-white-desktop.svg">
+                <source class="page-header__tablet-logo" media="(min-width:660px)" srcset="img/logo-pink-white-tablet.svg">
+                <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Приложение Pink">
+              </picture>
+            </a>
+          </li>
+          <li class="site-list__item site-list__item--active">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
 
- 		  <section class="advantages">
- 		  	<header class="advantages__header">
- 		  		<h2 class="visually-hidden">Наши преимущества!</h2>
- 		  		<b class="advantages__header-title">Устали от серости мегаполиса? Нам есть, что вам  предложить!</b>
- 		  	</header>
- 		  	<div class="advantages__list-wrapper">
-	 		  	<ul class="advantages__list">
-	 		  		<li class="advantages__item">
-	 		  			
-	 		  			<h3 class="advantages__item-title">Поднимает настроение</h3>
-
-	 		  			<p class="advantages__item-description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-	 		  		</li>
-	 		  		<li class="advantages__item">
-	 		  			<h3 class="advantages__item-title">Меняет мир вокруг</h3>
-	 		  			<p class="advantages__item-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-	 		  		</li>
-	 		  		<li class="advantages__item">
-	 		  			<h3 class="advantages__item-title">Заводит новых друзей</h3>
-	 		  			<p class="advantages__item-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-	 		  		</li>
-	 		  	</ul>
-	 		  	<div class="advantages__img-list">
-	          <div class="advantages__img-item">
-	            <picture>
-	              <source media="(min-width:960px)" srcset="img/iphone-screen-3-desktop@1x.png">
-	              <source media="(min-width:660px)" srcset="img/iphone-screen-3-tablet@1x.png">
-	              <img src="img/iphone-screen-mobile@1x.png" width="157" height="330" alt="Скриншот айфона">
-	            </picture>
-	          </div>
-	          <div class="advantages__img-item advantages__img-item--hidden">
-	            <picture>
-	              <source media="(min-width:960px)" srcset="img/iphone-screen-2-desktop@1x.png">
-	              <img src="img/iphone-screen-2-tablet@1x.png" width="157" height="330" alt="Скриншот айфона">
-	            </picture>
-	          </div>
-	          <div class="advantages__img-item advantages__img-item--hidden">
-	            <picture>
-	              <source media="(min-width:960px)" srcset="img/iphone-screen-1-desktop@1x.png">
-	              <img src="img/iphone-screen-1-tablet@1x.png" width="157" height="330" alt="Скриншот айфона">
-	            </picture>
-	          </div>
-	        </div>
-	      </div>
- 		  </section>
-
- 		  <section class="research">
- 		  	<h2 class="visually-hidden">Время эффекта</h2>
- 		  	<div class="research__wrapper">
-	        <img class="research__img" src="http://placehold.it/238x276" width="157" height="330" alt="Часы">
-	        <div class="research__item">
-	          <h2 class="research__title">Эффект<br> на 24 часа!</h2>
-	          <p class="research__description">Британские ученые провели исследования и доказали, что положительный эффект
-	            <br> от использования приложения длится
-	            <br> целые сутки!</p>
-	          <a class="research__link" href="#">Узнать больше об исследовании</a>
-	        </div>
-      	</div>
- 		  </section>
-
- 		  <section class="reviews">
-      <div class="reviews__wrapper slider">
-        <h2 class="visually-hidden">Отзывы о нас</h2>
-        <input type="radio" name="slide" id="slide-1" checked>
-        <input type="radio" name="slide" id="slide-2">
-        <input type="radio" name="slide" id="slide-3">
-        <div class="reviews__list slider__list">
-          <blockquote class="reviews__item slider__item">
-            <cite class="reviews__autor-name">Николай Петров <span class="reviews__autor-description-hidden">25 лет, водитель трамвая</span></cite>
-            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          </blockquote>
-          <blockquote class="reviews__item slider__item">
-            <cite class="reviews__autor-name">Василий николаев <span class="reviews__autor-description-hidden">25 лет, водитель трамвая</span></cite>
-            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          </blockquote>
-          <blockquote class="reviews__item slider__item">
-            <cite class="reviews__autor-name">Илья Тарасович <span class="reviews__autor-description-hidden">25 лет, водитель трамвая</span></cite>
-            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          </blockquote>
-        </div>
-        <div class="slider__toggles slider__toggles-reviews">
-          <label class="slider__toggle" for="slide-1"></label>
-          <label class="slider__toggle" for="slide-2"></label>
-          <label class="slider__toggle" for="slide-3"></label>
-        </div>
+        </ul>
+      </div>
+    </nav>
+    </div>
+    <section class="os-info">
+      <header class="visually-hidden">
+        <h1>Приложение "Pink", расскрась свой мир в розовые тона</h1>
+      </header>
+      <div class="os-info__description">
+        <picture>
+          <source media="(min-width:960px)" srcset="img/iphone-hand-desktop@1x.png">
+          <source media="(min-width:660px)" srcset="img/iphone-hand-tablet@1x.png">
+          <img class="os-info__img" src="img/iphone-hand-mobile@1x.png" alt="Скриншот айфона">
+        </picture>
+        
+        <b class="os-info__title">Взгляните на жизнь иначе!</b>
+        <a class="button os-info--button" href="#">Скачать приложение</a>
+        <ul class="os-info__list">
+          <li class="os-info__item os-info__item--apple"></li>
+          <li class="os-info__item os-info__item--android"></li>
+          <li class="os-info__item os-info__item--windows"></li>
+        </ul>
+        <p class="os-info__availability">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
     </section>
-
-    <section class="price">
-      <div class="price__wrapper slider">
-        <h2 class="visually-hidden">Наши цены</h2>
-        <div class="price__container">
-          <input type="radio" name="slide-table" id="slide-table-1">
-          <input type="radio" name="slide-table" id="slide-table-2" checked>
-          <input type="radio" name="slide-table" id="slide-table-3">
-          <table class="price__list slider__list">
-            <tr>
-              <th class="price__title-hidden visually-hidden"></th>
-              <th class="price__title">База<b class="price__title--price">1,99 usd</b></th>
-              <th class="price__title">Стандарт <b class="price__title--price">3,99 usd</b></th>
-              <th class="price__title">Анлим<b class="price__title--price">9,99 usd</b></th>
-            </tr>
-            <tr>
-              <td class="price__item price__item--desktop">Розовый фильтр</td>
-              <td class="price__item price__item--yes"><span class="price__item--mobile">Розовый фильтр</span></td>
-              <td class="price__item price__item--yes"><span class="price__item--mobile">Розовый фильтр</span></td>
-              <td class="price__item price__item--yes"><span class="price__item--mobile">Розовый фильтр</span></td>
-            </tr>
-            <tr>
-              <td class="price__item price__item--desktop">Cмайлики</td>
-              <td class="price__item price__item--no"><span class="price__item--mobile">Смайлики</span></td>
-              <td class="price__item price__item--yes"><span class="price__item--mobile">Смайлики</span></td>
-              <td class="price__item price__item--yes"><span class="price__item--mobile">Смайлики</span></td>
-            </tr>
-            <tr class="price__comments price__comments--no">
-              <td class="price__item price__item--desktop">Комментарии</td>
-              <td class="price__item price__item--no"><span class="price__item--mobile">Комментарии</span></td>
-              <td class="price__item price__item--no"><span class="price__item--mobile">Комментарии</span></td>
-              <td class="price__item price__item--yes"><span class="price__item--mobile">Комментарии</span></td>
-            </tr>
-          </table>
-          <div class="slider__toggles slider__toggles--price">
-            <label class="slider__toggle slider__toggle--price" for="slide-table-1"></label>
-            <label class="slider__toggle slider__toggle--price" for="slide-table-2"></label>
-            <label class="slider__toggle slider__toggle--price" for="slide-table-3"></label>
+    
+  </header>
+  <main class="page-main">
+    
+    <section class="advantages">
+      <header class="advantages__header">
+        <h2 class="visually-hidden">Наши преимущества!</h2>
+        <b class="advantages__header-title">Устали от серости мегаполиса? </b>
+        <b class="advantages__header-title">Нам есть, что вам предложить!</b>
+      </header>
+      <div class="advantages__list-wrapper">
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h3 class="advantages__item-title">Поднимает настроение</h3>
+            <p class="advantages__item-description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__item-title">Меняет мир вокруг</h3>
+            <p class="advantages__item-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br class="display-none"> усилить эффект</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__item-title">Заводит новых друзей</h3>
+            <p class="advantages__item-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+        <div class="advantages__img-list">
+          <div class="advantages__img-item">
+            <picture>
+              
+              <source media="(min-width:960px)" srcset="img/iphone-screen-3-desktop@1x.png">
+              <source media="(min-width:660px)" srcset="img/iphone-screen-3-tablet@1x.png">
+              <img src="img/iphone-screen-mobile@1x.png" alt="Скриншот айфона">
+            </picture>
+          </div>
+          <div class="advantages__img-item advantages__img-item--hidden">
+            <picture>
+              <source media="(min-width:960px)" srcset="img/iphone-screen-2-desktop@1x.png">
+              <img src="img/iphone-screen-2-tablet@1x.png" alt="Скриншот айфона">
+            </picture>
+          </div>
+          <div class="advantages__img-item advantages__img-item--hidden">
+            <picture>
+              <source media="(min-width:960px)" srcset="img/iphone-screen-1-desktop@1x.png">
+              <img src="img/iphone-screen-1-tablet@1x.png" alt="Скриншот айфона">
+            </picture>
           </div>
         </div>
       </div>
     </section>
-
+    <section class="research">
+      <header class="visually-hidden">
+        <h2>Время эффект</h2>
+      </header>
+      <div class="research__wrapper">
+        <img class="research__img" src="img/icon-timer.svg" width="266" height="276" alt="Часы">
+        <div class="research__item">
+          <b class="research__title">Эффект<br class="research-display-none"> на 24 часа!</b>
+          <p class="research__description">Британские ученые провели исследования и доказали, что положительный эффект
+            <br class="research-display-none"> от использования приложения длится
+            <br class="research-display-none"> целые сутки!</p>
+          <a class="research__link" href="#">Узнать больше об исследовании</a>
+        </div>
+      </div>
+    </section>
+    <section class="reviews">
+      <header class="visually-hidden">
+        <h2>Отзывы о нас</h2>
+      </header>
+      <div class="reviews__wrapper slider">
+        <input class="slider__toggle-hidden" type="radio" name="slide" id="slide-1" checked>
+        <input class="slider__toggle-hidden" type="radio" name="slide" id="slide-2">
+        <input class="slider__toggle-hidden" type="radio" name="slide" id="slide-3">
+        <div class="reviews__slider-controls slider__controls">
+          <label class="slider__toggle" for="slide-1"></label>
+          <label class="slider__toggle" for="slide-2"></label>
+          <label class="slider__toggle" for="slide-3"></label>
+        </div>
+        <div class="reviews__list slider__list">
+          <blockquote class="reviews__item slider__item">
+            <cite class="reviews__autor-name">Николай Петров <span class="reviews__autor-description">25 лет, водитель трамвая</span></cite>
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+          <blockquote class="reviews__item slider__item">
+            <cite class="reviews__autor-name">Василий николаев <span class="reviews__autor-description">25 лет, водитель трамвая</span></cite>
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+          <blockquote class="reviews__item slider__item">
+            <cite class="reviews__autor-name">Илья Тарасович <span class="reviews__autor-description">25 лет, водитель трамвая</span></cite>
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+    <section class="price">
+      <header>
+        <h2 class="visually-hidden">Наши цены</h2>
+      </header>
+      <input class="slider__toggle-hidden" type="radio" name="price__slide" id="price__slide-1">
+      <input class="slider__toggle-hidden" type="radio" name="price__slide" id="price__slide-2" checked>
+      <input class="slider__toggle-hidden" type="radio" name="price__slide" id="price__slide-3">
+      <div class="price__slider-controls slider__controls">
+        <label class="slider__toggle" for="price__slide-1"></label>
+        <label class="slider__toggle" for="price__slide-2"></label>
+        <label class="slider__toggle" for="price__slide-3"></label>
+      </div>
+      <div class="price__table">
+        <div class="price__table-wrapper">
+          <div class="price__table-header">
+            <ul class="price__table-header-row">
+              <li class="price__header-cell"></li>
+              <li class="price__header-cell">База<br><b class="price__value">1,99 usd</b></li>
+              <li class="price__header-cell">Стандарт <br><b class="price__value">3,99 usd</b></li>
+              <li class="price__header-cell">Анлим<br><b class="price__value">9,99 usd</b></li>
+            </ul>
+          </div>
+          <div class="price__table-group">
+            <ul class="price__table-row">
+              <li class="price__table-cell"><span>Розовый фильтр</span></li>
+              <li class="price__table-cell"><span class="price__table-mobile-only">Розовый фильтр</span></li>
+              <li class="price__table-cell"><span class="price__table-mobile-only">Розовый фильтр</span></li>
+              <li class="price__table-cell"><span class="price__table-mobile-only">Розовый фильтр</span></li>
+            </ul>
+            <ul class="price__table-row">
+              <li class="price__table-cell">Смайлики</li>
+              <li class="price__table-cell"><span class="price__table-mobile-only">Смайлики</span></li>
+              <li class="price__table-cell"><span class="price__table-mobile-only">Смайлики</span></li>
+              <li class="price__table-cell"><span class="price__table-mobile-only">Смайлики</span></li>
+            </ul>
+            <ul class="price__table-row">
+              <li class="price__table-cell">Комментарии</li>
+              <li class="price__table-cell"><span class="price__table-mobile-only">Комментарии</span></li>
+              <li class="price__table-cell"><span class="price__table-mobile-only">Комментарии</span></li>
+              <li class="price__table-cell"><span class="price__table-mobile-only">Комментарии</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="contacts">
+      <header class="visually-hidden">
+        <h2>Контакты</h2>
+      </header>
       <div class="contacts__wrapper">
         <b class="contacts__title">Остались вопросы?Свяжитесь с нами!</b>
-        <p class="contacts__text contacts__text-telefon">
+        <p class="contacts__text contacts__text--telefon">
           Звоните:
-          <a class="contacts__telephon">+7 (812) 555-66-66</a>
+          <a class="contacts__link">+7 (812) 555-66-66</a>
         </p>
         <p class="contacts__text contacts__text--email">
           Пишите:
-          <a class="contacts__email">mail@htmlacademy.ru</a>
+          <a class="contacts__link">mail@htmlacademy.ru</a>
         </p>
         <p class="contacts__text contacts__text--adress">
           Приезжайте в гости:
-          <a class="contacts__adress">ул. Большая Конюшенная, 19/8</a>
+          <a class="contacts__link">ул. Большая Конюшенная, 19/8</a>
         </p>
       </div>
+      <picture>
+        <source media="(min-width:960px)" srcset="img/bg-map-desktop@1x.jpg" >
+        <source media="(min-width:660px)" srcset="img/bg-map-tablet@1x.jpg" >
+        <img class="contacts__map" src="img/bg-map-mobile@1x.png" alt="Map">
+      </picture>
+      
     </section>
-    <img class="contacts__map" src="#" width="320" height="645" alt="Map">
-  	</main>
-  </body>
+  </main>
+  <footer class="footer">
+    <header class="visually-hidden">
+      <h2>Подвал</h2>
+    </header>
+    <div class="footer__wrapper">
+      <picture>
+        
+        <img src="img/logo-pink-blue-mobile.svg" alt="Логотип Pink">
+      </picture>
+      <ul class="footer__social-list">
+        <li class="footer__social-item footer__social-item--vk"></li>
+        <li class="footer__social-item footer__social-item--fb"></li>
+        <li class="footer__social-item footer__social-item--yt"></li>
+      </ul>
+      <div class="footer__copyright">
+        <p class="footer__copyright-text">Разработано</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+  var navMain = document.querySelector('.main-nav');
+  var navToggle = document.querySelector('.main-nav__toggle');
+
+  navMain.classList.remove('main-nav--nojs');
+
+  navToggle.addEventListener('click', function() {
+    if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+    } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  });
+
+  </script>
+</body>
+
 </html>
