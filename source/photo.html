@@ -26,10 +26,10 @@
               </a>
             </li>
             <li class="site-list__item">
-              <a>Главная</a>
+              <a href="index.html">Главная</a>
             </li>
             <li class="site-list__item  site-list__item--active">
-              <a href="photo.html">Фотографии</a>
+              <a>Фотографии</a>
             </li>
             <li class="site-list__item">
               <a href="form.html">Конкурс</a>
@@ -40,43 +40,53 @@
           </ul>
         </div>
       </nav>
-      <div class="page-header__description">
-        <h1 class="page-header__title">Фотографии пользователей</h1>
+      <div class="page-header__description page-header__description--photo">
+        <h1 class="page-header__title page-header__title--photo">Фотографии пользователей</h1>
       </div>
     </div>
   </header>
   <main class="page-main">
     <section class="photo">
+      <h2 class="visually-hidden">Фотографии пользователей</h2>
       <div class="photo__wrapper">
-        <header  class="visually-hidden">
-          <h2>Фотографии пользователей</h2>
-        </header>
-        <b class="photo__title">Взгляните на фотографии, которые выкладывают пользователи!Видите, как не хватает ваших?</b>
+        <b class="photo__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</b>
+        <div class="photo__best">
+          <picture class="photo__best-wrapper">
+            <source media="(min-width:960px)" srcset="img/panorama-desktop@1x.jpg">
+            <source media="(min-width:660px)" srcset="img/panorama-tablet@1x.jpg">
+            <img class="photo__best-img" src="img/panorama-mobile@1x.jpg" alt="user-photo">
+          </picture>
+          <div class="photo__best-description">
+            <b class="photo__best-autor">Анна <span class="photo__timer">(5 минут назад)</span></b>
+            <p class="photo__best-comment">
+              Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+            </p>
+            <a class="photo__best-like photo__like">Нравится: 215</a>
+          </div>
+        </div>
         <ul class="photo__list">
-          <li class="photo__item photo__item--best">
-            <img class="photo__img" src="http://placehold.it/320x137" width="320" height="137" alt="user-photo">
-            <div class="photo__description photo__description--best">
-              <b class="photo__autor photo__autor--best">Анна</b>
-              <p class="photo__comment photo__comment--best">
-                Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
-              </p>
-              <a class="photo__like">Нравится:215</a>
-            </div>
-          </li>
           <li class="photo__item">
-            <img src="http://placehold.it/280x180" width="280" height="137" alt="user-photo">
+            <picture class="photo__img-wapper">
+              <source media="(min-width:960px)" srcset="img/photo-car-desktop@1x.jpg">
+              <source media="(min-width:660px)" srcset="img/photo-car-tablet@1x.jpg">
+              <img class="photo__img" src="img/photo-car-mobile@1x.jpg" alt="user-photo">
+            </picture>
             <div class="photo__description">
-              <b class="photo__autor">Левон</b>
+              <b class="photo__autor">Левон <span class="photo__timer">(5 часов назад)</span></b>
               <p class="photo__comment">
                 Вчера он на луну летал, сегодня в руки к нам попал.
               </p>
-              <a class="photo__like">Нравится:356</a>
+              <a class="photo__like">Нравится: 356</a>
             </div>
           </li>
           <li class="photo__item">
-            <img src="http://placehold.it/280x180" width="280" height="137" alt="user-photo">
+            <picture class="photo__img-wapper">
+              <source media="(min-width:960px)" srcset="img/photo-drumset-desktop@1x.jpg">
+              <source media="(min-width:660px)" srcset="img/photo-drumset-tablet@1x.jpg">
+              <img class="photo__img" src="img/photo-drumset-mobile@1x.jpg" alt="user-photo">
+            </picture>
             <div class="photo__description">
-              <b class="photo__autor">Антон</b>
+              <b class="photo__autor">Антон <span class="photo__timer">(12 часов назад)</span></b>
               <p class="photo__comment">
                 Соседи будут рады!
               </p>
@@ -84,9 +94,13 @@
             </div>
           </li>
           <li class="photo__item">
-            <img src="http://placehold.it/280x180" width="280" height="137" alt="user-photo">
+            <picture class="photo__img-wapper">
+              <source media="(min-width:960px)" srcset="img/photo-window-desktop@1x.jpg">
+              <source media="(min-width:660px)" srcset="img/photo-window-tablet@1x.jpg">
+              <img class="photo__img" src="img/photo-window-mobile@1x.jpg" alt="user-photo">
+            </picture>
             <div class="photo__description">
-              <b class="photo__autor">Борис</b>
+              <b class="photo__autor">Борис <span class="photo__timer">(20 часов назад)</span></b>
               <p class="photo__comment">
                 Здесь могла быть ваша цитата о высоком и вечном.
               </p>
@@ -94,9 +108,13 @@
             </div>
           </li>
           <li class="photo__item">
-            <img src="http://placehold.it/280x180" width="280" height="137" alt="user-photo">
+            <picture class="photo__img-wapper">
+              <source media="(min-width:960px)" srcset="img/photo-fair-desktop@1x.jpg">
+              <source media="(min-width:660px)" srcset="img/photo-fair-tablet@1x.jpg">
+              <img class="photo__img" src="img/photo-fair-mobile@1x.jpg" alt="user-photo">
+            </picture>
             <div class="photo__description">
-              <b class="photo__autor">Сергей</b>
+              <b class="photo__autor">Сергей <span class="photo__timer">(25 часов назад)</span></b>
               <p class="photo__comment">
                 Самая кубанская в мире!
               </p>
@@ -104,19 +122,28 @@
             </div>
           </li>
           <li class="photo__item">
-            <img src="http://placehold.it/280x180" width="280" height="137" alt="user-photo">
+            <picture class="photo__img-wapper">
+              <source media="(min-width:960px)" srcset="img/photo-pov-desktop@1x.jpg">
+              <source media="(min-width:660px)" srcset="img/photo-pov-tablet@1x.jpg">
+              <img class="photo__img" src="img/photo-pov-mobile@1x.jpg" alt="user-photo">
+            </picture>
             <div class="photo__description">
-              <b class="photo__autor">Максим</b>
+              <b class="photo__autor">Максим <span class="photo__timer">(40 часов назад)</span></b>
               <p class="photo__comment">
                 Где снег-то?
               </p>
+              <p></p>
               <a class="photo__like">Нравится: 150</a>
             </div>
           </li>
           <li class="photo__item">
-            <img src="http://placehold.it/280x180" width="280" height="137" alt="user-photo">
+            <picture class="photo__img-wapper">
+              <source media="(min-width:960px)" srcset="img/photo-wing-desktop@1x.jpg">
+              <source media="(min-width:660px)" srcset="img/photo-wing-tablet@1x.jpg">
+              <img class="photo__img" src="img/photo-wing-mobile@1x.jpg" alt="user-photo">
+            </picture>
             <div class="photo__description">
-              <b class="photo__autor">Надежда</b>
+              <b class="photo__autor">Надежда <span class="photo__timer">(45 часов назад)</span></b>
               <p class="photo__comment">
                 Всем GM и взаимные лайки!
               </p>
@@ -128,44 +155,54 @@
     </section>
     <section class="download">
       <h2 class="visually-hidden">Загрузи свою фотографию</h2>
-      <b class="download__title">Затмите их всех!Выкладывайте все, что накопилось в телефоне!</b>
+      <div class="download__title-wrapper">
+        <b class="download__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</b>
+      </div>
       <div class="download__wrapper">
-        <img src="http://placehold.it/280x374" width="280" height="374" alt="user-photo">
-        <ul class="download__instruments-list">
-          <li class="download__instruments-item download__instruments-item--clip" aria-label="Обрезать фотографию"></li>
-          <li class="download__instruments-item download__instruments-item--filling" aria-label="Заливка цвета"></li>
-          <li class="download__instruments-item download__instruments-item--contrast" aria-label="Контраст"></li>
-        </ul>
-        <div class="range">
-          <div class="range__wrapper">
-            <div class="range__scale">
+        <picture class="download__img-wrapper">
+          <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg">
+          <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
+          <img src="img/photo-road-mobile@1x.jpg" alt="user-photo">
+        </picture>
+        <div class="download__container">
+          <ul class="download__list">
+            <li class="download__item" aria-label="Обрезать фотографию"></li>
+            <li class="download__item" aria-label="Заливка цвета"></li>
+            <li class="download__item" aria-label="Контраст"></li>
+          </ul>
+          <div class="download__range-list">
+            <div class="download__range-item">
             </div>
-            <div class="range__toggle"></div>
+            <div class="download__range-item">
+            </div>
+            <div class="download__range-item">
+            </div>
+          </div>
+          <div class="download__button-wrapper">
+            <a class="download__button button" href="#">Запостить</a>
+            <a class="download__button-cancel button" href="#">Отмена</a>
           </div>
         </div>
-        <a class="download__button button" href="#"></a>
-        <a class="download__button button" href="#"></a>
       </div>
     </section>
   </main>
-  <footer class="page-footer">
-    <img class="page-footer__logo-image" src="http://placehold.it/75x22" width="75" height="22" alt="Приложение Pink">
-    <div class="page-footer__social social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vk" href="#" aria-label="Вконтакте"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--fb" href="#" aria-label="Фейсбук"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="#" aria-label="Youtube"></a>
-        </li>
+  <footer class="footer">
+    <h2 class="visually-hidden">footer</h2>
+    <div class="footer__wrapper">
+      <a href="index.html" class="page-footer__logo">
+        <picture>
+          <source media="(min-width:960px)" srcset="img/logo-pink-blue-desktop.svg">
+          <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" alt="Приложение Pink">
+        </picture>
+      </a>
+      <ul class="footer__social-list">
+        <li class="footer__social-item"></li>
+        <li class="footer__social-item"></li>
+        <li class="footer__social-item"></li>
       </ul>
-    </div>
-    <div class="page-footer__copyright copyright">
-      <b class="copyright__text">Разработано</b>
-      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="htmlacademy"></a>
+      <div class="footer__copyright">
+        <p class="footer__copyright-text">Разработано</p>
+      </div>
     </div>
   </footer>
   <script>
