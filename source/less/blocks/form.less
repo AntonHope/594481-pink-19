@@ -47,6 +47,16 @@
   min-height: 57px;
   font-size: 19px;
   margin-top: 5px; 
+
+  &:hover {
+    border: 2px solid @bg-lightblue;
+
+  }
+  &:active,
+  &:focus {
+    border: 2px solid @pink;
+    outline: none;
+  }
 }
 
 .form__area::placeholder {
@@ -137,6 +147,14 @@
     background-color: @bg-white;
     border: 2px solid @border-color-gray;
   }
+  &:hover::after {
+    border: 2px solid @bg-lightblue;
+  }
+  &:active::after,
+  &:focus::after {
+    outline: none;
+    border: 2px solid @pink;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -146,7 +164,7 @@
     left: 9px;
     z-index: 2;
 
-    background-image: url(../../img/icon-yes.svg);
+    background-image: url(../../img/icon-yes-pink.svg);
     background-repeat: no-repeat;
     fill: @pink;
     display: none;
@@ -252,6 +270,12 @@
     border: 2px solid @border-color-gray;
     border-radius: 50%;
   }
+  &:hover::after {
+    border: 2px solid @bg-lightblue;
+  }
+  &:active::after {
+    border: 2px solid @pink;
+  }
 
   &::before {
     content: "";
@@ -265,6 +289,7 @@
     z-index: 2;
     display: none;
   }
+
 }
 
 .form__os-label:first-of-type {
@@ -336,22 +361,6 @@
   
 }
 
-.form__button {
-  text-transform: uppercase;
-  background-color: @bg-green;
-  color: @bg-white;
-  border-radius: 0%;
-  padding: 0;
-  width: 280px;
-  cursor: pointer;
-  border: none;
-  min-height: 62px;
-
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-  vertical-align: middle;
-}
 .form__must {
   font-size: 14px;
   text-transform: uppercase;
@@ -508,13 +517,13 @@
       content: "";
       position: absolute;
       right: 0;
-      top:0;
-      width: 62px;
-      height: 63px;
+      top:2px;
+      width: 60px;
+      height: 59px;
       background-color: @border-color-gray;
-
       z-index: 2;
     }
+
     &::after {
       content: "";
       position: absolute;
@@ -525,6 +534,7 @@
       z-index: 2;
     }
   }
+
   .form__contacts-item:nth-of-type(1) .form__area-label--contacts::after{
       background-image: url(../../img/icon-phone.svg);
       background-repeat: no-repeat;
@@ -540,11 +550,7 @@
   }
   .form__area--contacts {
     position: relative;
-    width: 460px;
-  }
-
-  .form__area--contacts::placeholder {
-    padding-left: 18px;
+    width: 498px;
   }
 
   .form__achievements {
@@ -743,7 +749,7 @@
   }
   .form__area--contacts {
     position: relative;
-    width: 350px;
+    width: 373px;
   }
 
   .form__area--contacts::placeholder {
