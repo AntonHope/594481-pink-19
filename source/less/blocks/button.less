@@ -13,3 +13,30 @@
     border: 3px solid #fff;
     border-radius: 30px;
 }
+
+.button-green {
+  text-transform: uppercase;
+  background-color: @bg-green;
+  color: @bg-white;
+  border-radius: 0%;
+  padding: 0;
+  width: 280px;
+  cursor: pointer;
+  border: none;
+  min-height: 62px;
+
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+
+  &:hover {
+    background-color: rgb(28, 155, 94);
+  }
+  &:active,
+  &:focus {
+    background-color: rgb(28, 155, 94);
+    color: rgba(255, 255, 255, 0.3);
+    outline: none;
+  }
+}

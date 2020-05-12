@@ -9,13 +9,13 @@
 }
 
 .photo__title {
-    font-size: 14.5px;
+    font-size: 14px;
     font-weight: normal;
     line-height: 30px;
 
     display: block;
 
-    width: 242px;
+    width: 250px;
     margin: 0 auto;
     padding-top: 46px;
     padding-bottom: 48px;
@@ -47,24 +47,25 @@
 }
 
 .photo__item {
-    font-size: 14px;
+    
 
     display: flex;
     flex-direction: column;
 
     width: 87.5%;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 
     background-color: @bg-grey;
 
     align-items: flex-start;
+    color: @bg-lightblue;
 }
 
 
 
 .photo__timer {
     font-size: 12px;
-    font-weight: normal;
+    font-weight: 300;
 
     text-transform: uppercase;
 
@@ -73,9 +74,10 @@
 
 .photo__description {
     max-width: 87.5%;
-    margin-top: 9px;
+    margin-top: 8px;
     margin-left: 18px;
-    padding-bottom: 16px;
+    padding-bottom: 18px;
+
 }
 
 
@@ -83,23 +85,46 @@
 .photo__img-wapper {
     width: 100%;
 }
+.photo__autor {
+    font-size: 14px;
+}
 .photo__comment {
-    font-size: 14.5px;
+    font-size: 14px;
     font-weight: normal;
     line-height: 24px;
-
     margin: 0;
+    margin-top: -2px;
 }
 .photo__best-wrapper,
 .photo__best-img {
     width: 100%;
 }
 
+.photo__best-wrapper{
+    position: relative;
+
+    &::before {
+        content: "Панорама дня";
+        position: absolute;
+        top: 0;
+        right: 20px;
+        width: 140px;
+        height: 32px;
+        background-color: @pink;
+        color: @bg-white;
+        text-align: center;
+        padding-top: 4px;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: bold;
+    }
+}
+
 .photo__best-autor,
 .photo__best-comment {
     margin: 0;
     margin-left: 18px;
-    font-size: 14.5px;
+    font-size: 14px;
     font-weight: normal;
     line-height: 24px;
 }
@@ -110,6 +135,7 @@
     padding-bottom: 19px;
 
     background-color: @bg-grey;
+
 }
 
 .photo__best-autor {
@@ -117,7 +143,8 @@
 }
 
 .photo__like {
-    font-size: 12.5px;
+    position: relative;
+    font-size: 12px;
 
     display: flex;
 
@@ -128,6 +155,19 @@
     text-transform: uppercase;
 
     color: @pink;
+
+    &::before {
+        content: "";
+        position: absolute;
+
+        top: 8px;
+        left: -32px;
+        width: 13px;
+        height: 12px;
+        background-image: url(../../img/icon-heart.svg);
+        background-repeat: no-repeat;
+
+    }
 }
 .photo__best-like {
   margin-left: 50px;
@@ -135,7 +175,7 @@
 
 @media (min-width: @tablet-width) {
     .photo__title {
-        font-size: 18.8px;
+        font-size: 18px;
         line-height: 30px;
 
         width: 446px;
@@ -180,6 +220,7 @@
         flex-direction: column;
 
         width: 87.5%;
+        min-height: 113px;
         margin-top: 14px;
         margin-left: 27px;
         padding-bottom: 20px;
@@ -192,6 +233,11 @@
     .photo__like {
         margin-top: 11px;
         margin-left: 0;
+
+        &::before {
+            top: 7px;
+            left: 87%;
+        }
     }
     .photo__comment {
         margin-top: -2px;
@@ -202,7 +248,13 @@
 
     .photo__best-wrapper {
         width: 100%;
+        &::before {
+            top: 58px;
+            right: 20px; 
+        }
     }
+
+
     .photo__best-img {
         width: 100%;
         height: 509px;
@@ -225,12 +277,12 @@
     }
     .photo__best-autor {
         margin-left: 28px;
-        padding-top: 22px;
+        padding-top: 23px;
 
         order: 1;
     }
     .photo__best-comment {
-        font-size: 14.5px;
+        font-size: 14px;
 
         width: 90%;
         margin-top: -2px;
@@ -238,6 +290,7 @@
 
         order: 3;
     }
+
     .photo__best-like {
         margin: 0;
         padding: 0;
@@ -245,6 +298,10 @@
         padding-right: 58px;
 
         order: 2;
+        &::before {
+            top: 30px;
+            left: 72%;
+        }
     }
 }
 

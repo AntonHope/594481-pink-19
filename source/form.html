@@ -15,7 +15,7 @@
       <b class="popup__title">Что-то пошло не так! </b>
       <p class="popup__description">Проверьте поля, выделенные красным, скоре всего вы забыли их заполнить</p>
       <div class="popup__link-wrapper">
-        <a class="popup__link" href="#">Ок</a>
+        <a class="popup__link button-green" href="#">Ок</a>
       </div>
     </div>
   </div>
@@ -24,7 +24,7 @@
       <b class="popup__title">Ваша заявка отправлена</b>
       <p class="popup__description">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
       <div class="popup__link-wrapper">
-        <a class="popup__link" href="#">Закрыть окно</a>
+        <a class="popup__link button-green" href="#">Закрыть окно</a>
       </div>
     </div>
   </div>
@@ -35,21 +35,25 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active-first">
-              <a class="page-header__logo">
-                <picture>
-                  <source class="page-header__desktop-logo" media="(min-width:960px)" srcset="img/logo-pink-white-desktop.svg">
-                  <source class="page-header__tablet-logo" media="(min-width:660px)" srcset="img/logo-pink-white-tablet.svg">
-                  <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Приложение Pink">
-                </picture>
+              <a class="page-header__logo" href="index.html">
+                <svg class="page-header__logo-image page-header__logo-image--staff" width="75" height="22">
+                  <use xlink:href="img/sprite.svg#page-header__logo-mobile"></use>
+                </svg>
+                <svg class="page-header__logo-image page-header__logo-image--staff" width="147" height="40">
+                  <use xlink:href="img/sprite.svg#page-header__logo-tablet"></use>
+                </svg>
+                <svg class="page-header__logo-image page-header__logo-image--staff" width="147" height="40">
+                  <use xlink:href="img/sprite.svg#page-header__logo-desktop"></use>
+                </svg>
               </a>
             </li>
             <li class="site-list__item">
               <a href="index.html">Главная</a>
             </li>
-            <li class="site-list__item  site-list__item--active">
+            <li class="site-list__item">
               <a href="photo.html">Фотографии</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--active">
               <a>Конкурс</a>
             </li>
             <li class="site-list__item">
@@ -72,11 +76,11 @@
         <ul class="form__full-name">
           <li class="form__full-field">
             <label class="form__area-label" for="family">Фамилия:</label>
-            <input class="form__area form__area--family" type="text" name="family" id="family" placeholder="Укажите фамилию *">
+            <input class="form__area form__area--family" type="text" name="family" id="family" placeholder="Укажите фамилию *" required>
           </li>
           <li class="form__full-field">
             <label class="form__area-label" for="name">Имя:</label>
-            <input class="form__area" type="text" name="name" id="name" placeholder="Введите ваше имя *">
+            <input class="form__area" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
           </li>
           <li class="form__full-field">
             <label class="form__area-label" for="patronymic">Отчество:</label>
@@ -124,7 +128,7 @@
               </li>
               <li class="form__contacts-item">
                 <label class="form__area-label form__area-label--contacts" for="email">Адрес почты</label>
-                <input class="form__area form__area--contacts" type="text" name="email" id="email" placeholder="Введите почту *">
+                <input class="form__area form__area--contacts" type="text" name="email" id="email" placeholder="Введите почту *" required>
               </li>
             </ul>
           </fieldset>
@@ -151,7 +155,7 @@
           </fieldset>
         </div>
         <div class="form__button-wrapper">
-          <button class="form__button" type="submit">Отправить форму</button>
+          <button class="form__button button-green" type="submit">Отправить форму</button>
           <p class="form__must">
             <span class="form__must-star">* </span>— обязательные<span class="form__must-star--hidden"> для заполнения</span> поля
           </p>
@@ -163,10 +167,12 @@
     <h2 class="visually-hidden">footer</h2>
     <div class="footer__wrapper">
       <a href="index.html" class="page-footer__logo">
-        <picture>
-          <source media="(min-width:960px)" srcset="img/logo-pink-blue-desktop.svg">
-          <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" alt="Приложение Pink">
-        </picture>
+        <svg class="footer__logo-image" width="147" height="40">
+          <use xlink:href="img/sprite.svg#footer__logo-small"></use>
+        </svg>
+        <svg class="footer__logo-image" width="147" height="40">
+          <use xlink:href="img/sprite.svg#footer__logo-big"></use>
+        </svg>
       </a>
       <ul class="footer__social-list">
         <li class="footer__social-item"></li>
@@ -175,6 +181,9 @@
       </ul>
       <div class="footer__copyright">
         <p class="footer__copyright-text">Разработано</p>
+        <svg class="footer__copyright-html-logo" width="60" height="60">
+          <use xlink:href="img/sprite.svg#footer__html-logo"></use>
+        </svg>
       </div>
     </div>
   </footer>

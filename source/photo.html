@@ -17,12 +17,16 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active-first">
-              <a class="page-header__logo">
-                <picture>
-                  <source class="page-header__desktop-logo" media="(min-width:960px)" srcset="img/logo-pink-white-desktop.svg">
-                  <source class="page-header__tablet-logo" media="(min-width:660px)" srcset="img/logo-pink-white-tablet.svg">
-                  <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Приложение Pink">
-                </picture>
+              <a class="page-header__logo" href="index.html">
+                <svg class="page-header__logo-image page-header__logo-image--staff" width="75" height="22">
+                  <use xlink:href="img/sprite.svg#page-header__logo-mobile"></use>
+                </svg>
+                <svg class="page-header__logo-image page-header__logo-image--staff" width="147" height="40">
+                  <use xlink:href="img/sprite.svg#page-header__logo-tablet"></use>
+                </svg>
+                <svg class="page-header__logo-image page-header__logo-image--staff" width="147" height="40">
+                  <use xlink:href="img/sprite.svg#page-header__logo-desktop"></use>
+                </svg>
               </a>
             </li>
             <li class="site-list__item">
@@ -132,7 +136,7 @@
               <p class="photo__comment">
                 Где снег-то?
               </p>
-              <p></p>
+             
               <a class="photo__like">Нравится: 150</a>
             </div>
           </li>
@@ -165,11 +169,29 @@
           <img src="img/photo-road-mobile@1x.jpg" alt="user-photo">
         </picture>
         <div class="download__container">
-          <ul class="download__list">
-            <li class="download__item" aria-label="Обрезать фотографию"></li>
-            <li class="download__item" aria-label="Заливка цвета"></li>
-            <li class="download__item" aria-label="Контраст"></li>
-          </ul>
+          <input type="radio" name="settings" id="crop" checked>
+          <input type="radio" name="settings" id="fill">
+          <input type="radio" name="settings" id="contrast">
+          
+          <div class="download__list">
+            <label  class="download__item" for="crop">
+              <svg class="download__item-img" width="48" height="48">
+                <use xlink:href="img/sprite.svg#download__item-crop"></use>
+              </svg>
+              
+            </label>
+            <label class="download__item" for="fill">
+              <svg class="download__item-img" width="48" height="43">
+                <use xlink:href="img/sprite.svg#download__item-fill"></use>
+              </svg>
+              
+            </label>
+            <label class="download__item" for="contrast">
+              <svg class="download__item-img" width="32" height="32">
+                <use xlink:href="img/sprite.svg#download__item-contrast"></use>
+              </svg>
+            </label>
+          </div>
           <div class="download__range-list">
             <div class="download__range-item">
             </div>
@@ -190,18 +212,26 @@
     <h2 class="visually-hidden">footer</h2>
     <div class="footer__wrapper">
       <a href="index.html" class="page-footer__logo">
-        <picture>
-          <source media="(min-width:960px)" srcset="img/logo-pink-blue-desktop.svg">
-          <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" alt="Приложение Pink">
-        </picture>
+        <svg class="footer__logo-image" width="147" height="40">
+          <use xlink:href="img/sprite.svg#footer__logo-small"></use>
+        </svg>
+        <svg class="footer__logo-image" width="147" height="40">
+          <use xlink:href="img/sprite.svg#footer__logo-big"></use>
+        </svg>
       </a>
-      <ul class="footer__social-list">
-        <li class="footer__social-item"></li>
-        <li class="footer__social-item"></li>
-        <li class="footer__social-item"></li>
-      </ul>
+
+      <div class="footer__social-list">
+        <a class="footer__social-item"></a>
+        <a class="footer__social-item"></a>
+        <a class="footer__social-item"></a>
+      </div>
       <div class="footer__copyright">
         <p class="footer__copyright-text">Разработано</p>
+        
+        <svg class="footer__copyright-html-logo" width="41" height="41">
+          <use xlink:href="img/sprite.svg#footer__html-logo"></use>
+        </svg>
+        
       </div>
     </div>
   </footer>

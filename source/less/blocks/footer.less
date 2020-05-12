@@ -62,33 +62,64 @@
     background-size: 15px 13px;
 
   }
+
+  &:hover {
+    border: 3px solid @bg-lightblue;
+    cursor: pointer;
+  }
+
+  &:active {
+    opacity: 0.5;
+    border: 3px solid rgb(233, 235, 236);
+  }
 }  
 
 .footer__copyright {
   position: relative;
   display: flex;
   justify-content: flex-start;
-  width: 130px;
+  width: 140px;
 
-  margin-top: 26px;
+  margin-top: 27px;
   color: @bg-lightblue;
 }
 
 .footer__copyright-text { 
+  display: block;
   font-size: 14px;
+  margin-left: 5px;
+}
+.footer__copyright-html-logo {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+}
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 13px;
-    right: 1px;
-    width: 27px;
-    height: 34px;
-    background-image: url(../../img/logo-htmlacademy.svg);
-    background-repeat: no-repeat;
-    background-size: 27px 34px;
-    z-index: 2;
-  }
+
+.footer__logo-image:nth-of-type(2) {
+  display: none;
+}
+.footer__logo-image {
+  fill: #283645;
+}
+.footer__logo-image:hover {
+  fill: #D22856;
+}
+.footer__logo-image:active {
+  opacity: 0.3;
+  fill: #283645;
+}
+
+.footer__copyright-html-logo {
+  fill: @pink;
+}
+.footer__copyright-html-logo:hover {
+  fill: @bg-lightblue;
+  cursor: pointer;
+}
+.footer__copyright-html-logo:active {
+  fill: @bg-lightblue;
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
@@ -99,21 +130,29 @@
     padding-top: 30px;
     padding-bottom: 30px;
   }
+
   .footer__wrapper {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
     width: 620px;
+  
   }
   .footer__social-list {
-    margin-top: 6px;
+    margin-top: 8px;
     margin-right: 16px;
   }
 
   .footer__copyright {
-    margin-top: 6px;
-    
+    margin-top: 8px;
+    width: 130px;
+  }
+  .footer__copyright-text {
+    margin-left: 0;
+  }
+  .footer__copyright-html-logo {
+    right: -6px;
   }
 }
 
@@ -141,6 +180,13 @@
       top: 14px;
       right: -1px;
     }
+  }
+  .footer__logo-image:nth-of-type(1) {
+    display: none;
+  }
+  .footer__logo-image:nth-of-type(2) {
+    display: block;
+
   }
 
 }
