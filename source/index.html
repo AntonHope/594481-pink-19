@@ -49,11 +49,7 @@
     <section class="os-info">
       <h1 class="visually-hidden">Приложение "Pink", расскрась свой мир в розовые тона</h1>
       <div class="os-info__description">
-        <picture>
-          <source media="(min-width:960px)" srcset="img/iphone-hand-desktop@1x.png">
-          <source media="(min-width:660px)" srcset="img/iphone-hand-tablet@1x.png">
-          <img class="os-info__img" src="img/iphone-hand-mobile@1x.png" alt="Скриншот айфона">
-        </picture>
+        <div class="os-info__description-wrapper"></dir>
         <b class="os-info__title">Взгляните на жизнь иначе!</b>
         <a class="button os-info--button" href="#">Скачать приложение</a>
         <ul class="os-info__list">
@@ -89,22 +85,22 @@
         </ul>
         <div class="advantages__img-list">
           <div class="advantages__img-item">
-            <picture>
-              <source media="(min-width:960px)" srcset="img/iphone-screen-3-desktop@1x.png">
-              <source media="(min-width:660px)" srcset="img/iphone-screen-3-tablet@1x.png">
-              <img src="img/iphone-screen-mobile@1x.png" alt="Скриншот айфона">
+            <picture class="advantages__img-item-wrapper">
+              <source media="(min-width:960px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
+              <source media="(min-width:660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+              <img src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Скриншот айфона">
             </picture>
           </div>
           <div class="advantages__img-item advantages__img-item--hidden">
-            <picture>
-              <source media="(min-width:960px)" srcset="img/iphone-screen-2-desktop@1x.png">
-              <img src="img/iphone-screen-2-tablet@1x.png" alt="Скриншот айфона">
+            <picture class="advantages__img-item-wrapper">
+              <source media="(min-width:960px)" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x">
+              <img src="img/iphone-screen-2-tablet@1x.png" srcset="img/iphone-screen-2-tablet@2x.png 2x" alt="Скриншот айфона">
             </picture>
           </div>
           <div class="advantages__img-item advantages__img-item--hidden">
-            <picture>
-              <source media="(min-width:960px)" srcset="img/iphone-screen-1-desktop@1x.png">
-              <img src="img/iphone-screen-1-tablet@1x.png" alt="Скриншот айфона">
+            <picture class="advantages__img-item-wrapper">
+              <source media="(min-width:960px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
+              <img src="img/iphone-screen-1-tablet@1x.png" srcset="img/iphone-screen-1-tablet@2x.png 2x" alt="Скриншот айфона">
             </picture>
           </div>
         </div>
@@ -113,10 +109,20 @@
     <section class="research">
       <h2 class="visually-hidden">Время эффект</h2>
       <div class="research__wrapper">
-        <img class="research__img" src="img/icon-timer.svg" width="266" height="276" alt="Часы">
+        <div class="research__img-wrapper">
+          <svg class="research__img-timer" width="238" height="276">
+            <use xlink:href="img/sprite.svg#timer"></use>
+          </svg>
+          <svg class="research__img-circle" width="202" height="202">
+            <use xlink:href="img/sprite.svg#circle"></use>
+          </svg>
+          <svg class="research__img-value" width="120" height="100">
+            <use xlink:href="img/sprite.svg#value"></use>
+          </svg>
+        </div>
         <div class="research__item">
           <b class="research__title">Эффект<br class="research-display-none"> на 24 часа!</b>
-          <p class="research__description">Британские ученые провели исследования и доказали, что положительный эффект
+          <p class="research__description">Британские ученые провели исследования и доказали,<br class="research__description-fix"> что положительный эффект
             <br class="research-display-none"> от использования приложения длится
             <br class="research-display-none"> целые сутки!</p>
           <a class="research__link" href="#">Узнать больше об исследовании</a>
@@ -140,6 +146,12 @@
           <blockquote class="reviews__item slider__item">
             <cite class="reviews__autor-name">Николай Петров <span class="reviews__autor-description">25 лет, водитель трамвая</span></cite>
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <svg class="reviews__right-arrow" width="22" height="43">
+              <use xlink:href="img/sprite.svg#review__left-arrow"></use>
+            </svg>
+            <svg class="reviews__left-arrow" width="22" height="43">
+              <use xlink:href="img/sprite.svg#review__right-arrow"></use>
+            </svg>
           </blockquote>
           <blockquote class="reviews__item slider__item">
             <cite class="reviews__autor-name">Василий николаев <span class="reviews__autor-description">25 лет, водитель трамвая</span></cite>
@@ -216,11 +228,10 @@
           <a class="contacts__link">ул. Большая Конюшенная, 19/8</a>
         </p>
       </div>
-      <picture>
-        <source media="(min-width:960px)" srcset="img/bg-map-desktop@1x.jpg">
-        <source media="(min-width:660px)" srcset="img/bg-map-tablet@1x.jpg">
-        <img class="contacts__map" src="img/bg-map-mobile@1x.png" alt="Map">
-      </picture>
+      <div class="contacts__map">
+        <div class="contacts__map-triangle"></div>
+      </div>
+
     </section>
   </main>
   <footer class="footer footer--mobile">

@@ -18,33 +18,52 @@
     display: flex;
     justify-content: space-between;
 
-    width: 650px;
+    width: 660px;
     padding-top: 50px;
-    padding-bottom: 90px;
+    padding-bottom: 70px;
 
   }
-  .research__img {
-
+  .research__img-wrapper {
+    position: relative;
+  }
+  .research__img-timer {
+    position: absolute;
+    top: 8px;
+    left: 21px;
+  }
+  .research__img-circle {
+    position: absolute;
+    top: 63px;
+    left: 39px;
+    z-index: 2;
+  }
+  .research__img-value {
+    position: absolute;
+    top: 120px;
+    left: 80px;
+   
   }
   .research__item {
     display: flex;
     flex-direction: column;
     width: 330px;
-    margin-top: 39px;
+    margin-top: 45px;
+    padding-bottom: 40px;
   }
   .research__title {
     font-size: 30px;
     line-height: 37px;
   }
   .research__description {
-    font-size: 14.5px;
+    font-size: 14px;
     line-height: 24px;
     width: 300px;
     margin-top: 9px;
+    color: @bg-lightblue;
   }
   .research__link {
-    font-size: 14.5px;
-    margin-top: -10px;
+    font-size: 14px;
+    margin-top: -6px;
     color: @pink;
     &:hover {
       color: @pink-hover;
@@ -52,6 +71,9 @@
     &:active {
       color: @pink-active;
     }
+  }
+  .research__description-fix {
+    display: none;
   }
 }
 
@@ -64,15 +86,50 @@
   }
   .research__wrapper {
     width: 960px;
+    padding-top: 46px;
+    padding-bottom: 123px;
+  }
+  .research__img-timer {
+    position: absolute;
+    top: 0px;
+    left: 11px;
+    width: 298px;
+    height: 345px;
+  }
+  .research__img-circle {
+    position: absolute;
+    top: 69px;
+    left: 34px;
+
+    width: 253px;
+    height: 253px;
+  }
+  .research__img-value {
+    position: absolute;
+    top: 127px;
+    left: 80px;
+    width: 156px;
+    height: 156px;
+   
   }
   .research__item  {
-    width: 590px;
+    width: 585px;
+    margin-top: 90px;
   }
   .research__description  {
-    font-size: 19px;
-    line-height: 25px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 20px;
     
     font-weight: normal;
-    width: 550px;
+    width: 530px;
+  }
+  .research__link {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 14px; 
+  }
+  .research__description-fix {
+    display: block;
   }
 }

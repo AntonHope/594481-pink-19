@@ -31,6 +31,7 @@
 
 .reviews__autor-description {
     display: none;
+
 }
 
 .reviews__item {
@@ -55,21 +56,37 @@
     font-size: 14px;
     line-height: 30px;
 
-    color: rgb(51, 51, 51);
+    color: @bg-lightblue;
 }
+.reviews__right-arrow,
+.reviews__left-arrow {
+    display: none;
+    }
 
 @media (min-width: @tablet-width) {
+    .reviews {
+        background: linear-gradient(
+        -4.5deg,
+        @bg-grey 0%,
+        @bg-grey 25%,
+        transparent 25.5%
+    );
+        background-color: @bg-white;
+        padding-bottom: 148px;
+    }
     .reviews__slider-controls {
         margin-top: 37px;
     }
     .reviews__autor-description {
         font-size: 14px;
         font-weight: normal;
-
+        color: @bg-lightblue;
         display: block;
+        margin-top: 2px;
     }
     .reviews__item {
-        width: 620px;
+        width: 640px;
+        margin-top: 45px;
     }
     .reviews__autor-name {
         font-size: 20px;
@@ -79,27 +96,74 @@
         order: 1;
     }
     .reviews__text {
-        font-size: 18.5px;
+        font-size: 18px;
         line-height: 30px;
     }
 }
 
 @media (min-width: @desktop-width) {
     .reviews {
-        padding-bottom: 206px;
+        padding-bottom: 214px;
 
         background: linear-gradient(
-        -4.5deg,
+        -3.7deg,
         @bg-grey 0%,
         @bg-grey 25%,
         transparent 25.5%
         );
         background-color: @bg-white;
+
     }
     .reviews__slider-controls {
         display: none;
     }
     .reviews__item {
+        position: relative;
         width: 695px;
+        margin-top: 167px;
+    }
+    .reviews__right-arrow,
+    .reviews__left-arrow {
+        display: block;
+        position: absolute;
+        top: 45px;
+        width: 22px;
+        height: 41px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        fill: rgba(40, 54, 69, 0.3);
+        &:hover {
+            fill:rgba(40, 54, 69, 0.6);
+        }
+        &:active,
+        &:focus {
+            outline: none;
+            fill:rgba(40, 54, 69, 0.1);
+        }
+    }
+    .reviews__right-arrow {
+        left: -112px;
+        background-image: url(../../img/icon-review-arrow-left.svg);
+    }
+    .reviews__left-arrow {
+        right: -112px;
+        background-image: url(../../img/icon-review-arrow-right.svg);
+    }
+    .reviews__autor-name {
+        position: relative;
+        font-size: 24px;
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 230px;
+            left: 311px;
+            width: 80px;
+            height: 70px;
+            background-image: url(../../img/icon-quotes.svg);
+            background-repeat: no-repeat;
+        }
+    }
+    .reviews__autor-description {
+        font-size: 18px;
     }
 }
