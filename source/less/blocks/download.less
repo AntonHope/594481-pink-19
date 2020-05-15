@@ -91,6 +91,7 @@
   width: 240px;
   height: 50px;
   margin-top: 10px;
+  display: none;
 }
 
 .download__range-item::before {
@@ -144,35 +145,31 @@
   display: none;
 }
 
-.download__range-item {
-  display: none;
-}
-
-#crop:checked~.download__range-list .download__range-item:nth-of-type(1) {
+#crop:checked ~ .download__range-list .download__range-item:nth-of-type(1) {
   display: block;
 }
 
-#fill:checked~.download__range-list .download__range-item:nth-of-type(2) {
+#fill:checked ~ .download__range-list .download__range-item:nth-of-type(2) {
   display: block;
 }
 
-#contrast:checked~.download__range-list .download__range-item:nth-of-type(3) {
+#contrast:checked ~ .download__range-list .download__range-item:nth-of-type(3) {
   display: block;
 }
 
-#crop:checked~.download__list .download__item:nth-of-type(1) .download__item-img {
+#crop:checked ~ .download__list .download__item:nth-of-type(1) .download__item-img {
   opacity: 1;
 
   fill: @pink;
 }
 
-#fill:checked~.download__list .download__item:nth-of-type(2) .download__item-img {
+#fill:checked ~ .download__list .download__item:nth-of-type(2) .download__item-img {
   opacity: 1;
 
   fill: @pink;
 }
 
-#contrast:checked~.download__list .download__item:nth-of-type(3) .download__item-img {
+#contrast:checked ~ .download__list .download__item:nth-of-type(3) .download__item-img {
   opacity: 1;
 
   fill: @pink;
@@ -181,11 +178,11 @@
 .download__item-img {
   cursor: pointer;
 
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .download__item-img:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .download__button-wrapper {
@@ -298,7 +295,7 @@
 
     content: "";
 
-    background-image: url(../img/icon-editor-crop.svg);
+    background-image: url("../img/icon-editor-crop.svg");
     background-repeat: no-repeat;
     background-size: 24px;
   }
@@ -313,7 +310,7 @@
 
     content: "";
 
-    background-image: url(../img/icon-editor-fill.svg);
+    background-image: url("../img/icon-editor-fill.svg");
     background-repeat: no-repeat;
     background-size: 24px;
   }
@@ -328,7 +325,7 @@
 
     content: "";
 
-    background-image: url(../img/icon-editor-contrast.svg);
+    background-image: url("../img/icon-editor-contrast.svg");
     background-repeat: no-repeat;
     background-size: 16px;
   }

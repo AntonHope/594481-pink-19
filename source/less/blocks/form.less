@@ -135,7 +135,7 @@
   color: @pink;
 }
 
-.form__achievements-list input[type='checkbox'] {
+.form__achievements-list input[type="checkbox"] {
   display: none;
 }
 
@@ -169,7 +169,7 @@
     width: 35px;
     height: 35px;
 
-    content: '';
+    content: "";
 
     border: 2px solid @border-color-gray;
     background-color: @bg-white;
@@ -196,21 +196,21 @@
     width: 40px;
     height: 40px;
 
-    content: '';
+    content: "";
 
-    background-image: url(../img/icon-yes-pink.svg);
+    background-image: url("../img/icon-yes-pink.svg");
     background-repeat: no-repeat;
 
     fill: @pink;
   }
 }
 
-#selfi:checked~.form__achievements-label--selfi::before,
-#beech:checked~.form__achievements-label--beech::before,
-#chuck:checked~.form__achievements-label--chuck::before,
-#souvenirs:checked~.form__achievements-label--souvenirs::before,
-#tower:checked~.form__achievements-label--tower::before,
-#hotel:checked~.form__achievements-label--hotel::before {
+#selfi:checked ~ .form__achievements-label--selfi::before,
+#beech:checked ~ .form__achievements-label--beech::before,
+#chuck:checked ~ .form__achievements-label--chuck::before,
+#souvenirs:checked ~ .form__achievements-label--souvenirs::before,
+#tower:checked ~ .form__achievements-label--tower::before,
+#hotel:checked ~ .form__achievements-label--hotel::before {
   display: block;
 }
 
@@ -271,7 +271,7 @@
   border: none;
 }
 
-.form__os-wrapper input[type='radio'] {
+.form__os-wrapper input[type="radio"] {
   display: none;
 }
 
@@ -309,7 +309,7 @@
     width: 35px;
     height: 35px;
 
-    content: '';
+    content: "";
 
     border: 2px solid @border-color-gray;
     border-radius: 50%;
@@ -335,7 +335,7 @@
     width: 15px;
     height: 15px;
 
-    content: '';
+    content: "";
 
     border-radius: 50%;
     background-color: @pink;
@@ -346,9 +346,9 @@
   margin-top: 0;
 }
 
-#ios:checked~.form__os-label:first-of-type::before,
-#android:checked~.form__os-label:nth-of-type(2)::before,
-#windows:checked~.form__os-label:nth-of-type(3)::before {
+#ios:checked ~ .form__os-label:first-of-type::before,
+#android:checked ~ .form__os-label:nth-of-type(2)::before,
+#windows:checked ~ .form__os-label:nth-of-type(3)::before {
   display: block;
 }
 
@@ -615,7 +615,7 @@
       width: 60px;
       height: 59px;
 
-      content: '';
+      content: "";
 
       background-color: @border-color-gray;
     }
@@ -629,12 +629,12 @@
       width: 20px;
       height: 20px;
 
-      content: '';
+      content: "";
     }
   }
 
   .form__contacts-item:nth-of-type(1) .form__area-label--contacts::after {
-    background-image: url(../img/icon-phone.svg);
+    background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
     background-size: 20px 19px;
   }
@@ -643,7 +643,7 @@
     top: 25px;
     right: 20px;
 
-    background-image: url(../img/icon-mail.svg);
+    background-image: url("../img/icon-mail.svg");
     background-repeat: no-repeat;
     background-size: 18px 13px;
   }
@@ -670,10 +670,14 @@
   }
 
   .form__achievements-list {
-    width: 616px;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 47px;
     padding-bottom: 46px;
 
     align-items: flex-start;
+
+
   }
 
   .form__achievements-title {
@@ -693,12 +697,6 @@
       top: 5px;
       left: 9px;
     }
-  }
-
-  .form__achievements-list {
-    width: 500px;
-    margin: 0 auto;
-    margin-top: 47px;
   }
 
   .form__achievements-item {

@@ -54,7 +54,7 @@
     top: 15px;
     left: 14px;
 
-    background-image: url(../img/icon-twitter.svg);
+    background-image: url("../img/icon-twitter.svg");
     background-repeat: no-repeat;
     background-size: 18px 14px;
   }
@@ -63,7 +63,7 @@
     top: 12px;
     left: 17px;
 
-    background-image: url(../img/icon-facebook.svg);
+    background-image: url("../img/icon-facebook.svg");
     background-repeat: no-repeat;
     background-size: 9px 18px;
   }
@@ -72,7 +72,7 @@
     top: 15px;
     left: 17px;
 
-    background-image: url(../img/icon-youtube.svg);
+    background-image: url("../img/icon-youtube.svg");
     background-repeat: no-repeat;
     background-size: 15px 13px;
   }
@@ -84,7 +84,7 @@
   }
 
   &:active {
-    opacity: .5;
+    opacity: 0.5;
     border: 3px solid rgb(233, 235, 236);
   }
 }
@@ -114,8 +114,8 @@
   position: absolute;
   top: 10px;
   right: 0;
+  fill: @pink;
 }
-
 
 .footer__logo-image:nth-of-type(2) {
   display: none;
@@ -130,13 +130,9 @@
 }
 
 .footer__logo-image:active {
-  opacity: .3;
+  opacity: 0.3;
 
   fill: #283645;
-}
-
-.footer__copyright-html-logo {
-  fill: @pink;
 }
 
 .footer__copyright-html-logo:hover {
@@ -146,7 +142,7 @@
 }
 
 .footer__copyright-html-logo:active {
-  opacity: .3;
+  opacity: 0.3;
 
   fill: @bg-lightblue;
 }
