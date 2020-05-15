@@ -15,28 +15,30 @@
 }
 
 .button-green {
-  text-transform: uppercase;
-  background-color: @bg-green;
-  color: @bg-white;
-  border-radius: 0%;
-  padding: 0;
-  width: 280px;
-  cursor: pointer;
-  border: none;
-  min-height: 62px;
+    font-size: 18px;
+    font-weight: bold;
 
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-  vertical-align: middle;
+    width: 280px;
+    min-height: 62px;
+    padding: 0;
 
-  &:hover {
-    background-color: rgb(28, 155, 94);
-  }
-  &:active,
-  &:focus {
-    background-color: rgb(28, 155, 94);
-    color: rgba(255, 255, 255, 0.3);
-    outline: none;
-  }
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    color: @bg-white;
+    border: none;
+    border-radius: 0;
+    background-color: @bg-green;
+
+    &:hover {
+        background-color: rgb(28, 155, 94);
+    }
+    &:active,
+    &:focus {
+        color: rgba(255, 255, 255, .3);
+        outline: none;
+        background-color: rgb(28, 155, 94);
+    }
 }

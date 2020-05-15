@@ -38,7 +38,7 @@
         width: 6px;
         height: 6px;
 
-        content: '';
+        content: "";
 
         border: 3px solid @bg-lightblue;
         border-radius: 50%;
@@ -54,7 +54,7 @@
         width: 6px;
         height: 6px;
 
-        content: '';
+        content: "";
 
         border: 3px solid @bg-lightblue;
         border-radius: 50%;
@@ -71,7 +71,7 @@
         width: 6px;
         height: 6px;
 
-        content: '';
+        content: "";
 
         border: 3px solid @bg-lightblue;
         border-radius: 50%;
@@ -105,13 +105,12 @@
 
 .price__header-cell {
     font-size: 18px;
-    line-height: 30px;
     font-weight: bold;
+    line-height: 30px;
 
     display: table-cell;
 
     width: 278px;
-    
     padding: 17px 0 20px 0;
 
     text-align: center;
@@ -132,26 +131,31 @@
 .price__header-cell:nth-of-type(3) {
     position: relative;
     &::before {
-        content: "Хит";
-        text-transform: uppercase;
-        position: absolute;
-        transform: rotate(-45deg);
-        top: 6px;
-        left: 2px;
-        width: 70px;
-        height: 70px;
-        z-index: 2;
         font-size: 14px;
         font-weight: 300;
 
+        position: absolute;
+        z-index: 2;
+        top: 6px;
+        left: 2px;
+
+        width: 70px;
+        height: 70px;
+
+        content: "Хит";
+        transform: rotate(-45deg);
+        text-transform: uppercase;
     }
     &::after {
-        content: "";
         position: absolute;
         top: 0;
         left: -2px;
+
         width: 70px;
         height: 70px;
+
+        content: "";
+
         background-image: url(../../img/bg-hit.svg);
         background-repeat: no-repeat;
     }
@@ -159,12 +163,15 @@
 .price__table-cell {
     position: relative;
     &::after {
-        content: "";
         position: absolute;
         top: 17px;
         right: 16px;
+
         width: 33px;
         height: 22px;
+
+        content: "";
+
         background-image: url(../../img/icon-yes.svg);
         background-repeat: no-repeat;
         background-size: 33px 22px;
@@ -182,12 +189,15 @@
         display: none;
     }
     &::before {
-        content: "";
         position: absolute;
         top: 13px;
         right: 18px;
+
         width: 30px;
         height: 30px;
+
+        content: "";
+
         background-image: url(../../img/icon-no.svg);
         background-repeat: no-repeat;
         background-size: 27px 27px;
@@ -196,8 +206,8 @@
 
 .price__header-cell .price__value {
     font-size: 24px;
-    line-height: 32px;
     font-weight: 300;
+    line-height: 32px;
 
     display: block;
 }
@@ -243,8 +253,9 @@
         display: none;
     }
     .price {
-        align-items: center;
         padding-bottom: 68px;
+
+        align-items: center;
     }
     .price__table {
         overflow: visible;
@@ -262,46 +273,45 @@
         font-size: 16px;
 
         width: 162px;
-
-        
-         padding: 11px 0 9px 0;
+        padding: 11px 0 9px 0;
     }
     .price__header-cell:nth-of-type(1) {
         display: table-cell;
     }
-.price__header-cell:nth-of-type(3) {
-    &::before {
-        content: "Хит";
-        text-transform: uppercase;
-        position: absolute;
-        transform: rotate(-45deg);
-        top: 0px;
-        left: 2px;
-        width: 50px;
-        height: 50px;
+    .price__header-cell:nth-of-type(3) {
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 2px;
 
-    }
-    &::after {
-        top: 0;
-        left: 0px;
-        background-image: url(../../img/bg-hit-tablet.svg);
+            width: 50px;
+            height: 50px;
 
+            content: "Хит";
+            transform: rotate(-45deg);
+            text-transform: uppercase;
+        }
+        &::after {
+            top: 0;
+            left: 0;
+
+            background-image: url(../../img/bg-hit-tablet.svg);
+        }
     }
-}
-.price__table-cell {
-    &::after {
-        top: 11px;
-        right: 60px;
+    .price__table-cell {
+        &::after {
+            top: 11px;
+            right: 60px;
+        }
     }
-}
-.price__table-row:nth-of-type(2)  .price__table-cell:nth-of-type(2),
-.price__table-row:nth-of-type(3)  .price__table-cell:nth-of-type(2),
-.price__table-row:nth-of-type(3)  .price__table-cell:nth-of-type(3) {
-    &::before {
-        top: 8px;
-        right: 60px;
+    .price__table-row:nth-of-type(2)  .price__table-cell:nth-of-type(2),
+    .price__table-row:nth-of-type(3)  .price__table-cell:nth-of-type(2),
+    .price__table-row:nth-of-type(3)  .price__table-cell:nth-of-type(3) {
+        &::before {
+            top: 8px;
+            right: 60px;
+        }
     }
-}
     .price__table-cell {
         width: 160px;
         height: 45px;
@@ -318,9 +328,9 @@
     .price__header-cell .price__value {
         font-size: 18px;
         font-weight: 300;
+
         margin-top: -4px;
     }
-
 }
 
 @media (min-width: @desktop-width) {
@@ -351,35 +361,36 @@
     .price__header-cell .price__value {
         font-size: 24px;
         font-weight: 300;
+
         margin-top: 2px;
     }
-.price__table-cell {
-    &::after {
-        top: 22px;
-        right: 102px;
+    .price__table-cell {
+        &::after {
+            top: 22px;
+            right: 102px;
+        }
     }
-}
-.price__table-row:nth-of-type(2)  .price__table-cell:nth-of-type(2),
-.price__table-row:nth-of-type(3)  .price__table-cell:nth-of-type(2),
-.price__table-row:nth-of-type(3)  .price__table-cell:nth-of-type(3) {
-    &::before {
-        top: 14px;
-        right: 102px;
+    .price__table-row:nth-of-type(2)  .price__table-cell:nth-of-type(2),
+    .price__table-row:nth-of-type(3)  .price__table-cell:nth-of-type(2),
+    .price__table-row:nth-of-type(3)  .price__table-cell:nth-of-type(3) {
+        &::before {
+            top: 14px;
+            right: 102px;
+        }
     }
-}
-.price__header-cell:nth-of-type(3) {
+    .price__header-cell:nth-of-type(3) {
+        &::before {
+            top: 7px;
+            left: 3px;
 
-    &::before {
-        top: 7px;
-        left: 3px;
-        width: 70px;
-        height: 70px;
+            width: 70px;
+            height: 70px;
+        }
+        &::after {
+            top: 0;
+            left: 0;
 
+            background-image: url(../../img/bg-hit.svg);
+        }
     }
-    &::after {
-        top: 0;
-        left: 0px;
-        background-image: url(../../img/bg-hit.svg);
-    }
-}
 }
