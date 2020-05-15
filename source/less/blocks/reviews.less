@@ -31,7 +31,6 @@
 
 .reviews__autor-description {
     display: none;
-
 }
 
 .reviews__item {
@@ -61,18 +60,19 @@
 .reviews__right-arrow,
 .reviews__left-arrow {
     display: none;
-    }
+}
 
 @media (min-width: @tablet-width) {
     .reviews {
+        padding-bottom: 148px;
+
         background: linear-gradient(
         -4.5deg,
         @bg-grey 0%,
         @bg-grey 25%,
         transparent 25.5%
-    );
+        );
         background-color: @bg-white;
-        padding-bottom: 148px;
     }
     .reviews__slider-controls {
         margin-top: 37px;
@@ -80,9 +80,12 @@
     .reviews__autor-description {
         font-size: 14px;
         font-weight: normal;
-        color: @bg-lightblue;
+
         display: block;
+
         margin-top: 2px;
+
+        color: @bg-lightblue;
     }
     .reviews__item {
         width: 640px;
@@ -112,53 +115,65 @@
         transparent 25.5%
         );
         background-color: @bg-white;
-
     }
     .reviews__slider-controls {
         display: none;
     }
     .reviews__item {
         position: relative;
+
         width: 695px;
         margin-top: 167px;
     }
     .reviews__right-arrow,
     .reviews__left-arrow {
-        display: block;
         position: absolute;
         top: 45px;
+
+        display: block;
+
         width: 22px;
         height: 41px;
-        background-repeat: no-repeat;
+
         cursor: pointer;
-        fill: rgba(40, 54, 69, 0.3);
+
+        background-repeat: no-repeat;
+
+        fill: rgba(40, 54, 69, .3);
         &:hover {
-            fill:rgba(40, 54, 69, 0.6);
+            fill: rgba(40, 54, 69, .6);
         }
         &:active,
         &:focus {
             outline: none;
-            fill:rgba(40, 54, 69, 0.1);
+
+            fill: rgba(40, 54, 69, .1);
         }
     }
     .reviews__right-arrow {
         left: -112px;
+
         background-image: url(../../img/icon-review-arrow-left.svg);
     }
     .reviews__left-arrow {
         right: -112px;
+
         background-image: url(../../img/icon-review-arrow-right.svg);
     }
     .reviews__autor-name {
-        position: relative;
         font-size: 24px;
+
+        position: relative;
         &::before {
-            content: "";
             position: absolute;
             bottom: 230px;
             left: 311px;
+
             width: 80px;
             height: 70px;
+
+            content: "";
+
             background-image: url(../../img/icon-quotes.svg);
             background-repeat: no-repeat;
         }

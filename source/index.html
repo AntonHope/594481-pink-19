@@ -49,16 +49,17 @@
     <section class="os-info">
       <h1 class="visually-hidden">Приложение "Pink", расскрась свой мир в розовые тона</h1>
       <div class="os-info__description">
-        <div class="os-info__description-wrapper"></dir>
-        <b class="os-info__title">Взгляните на жизнь иначе!</b>
-        <a class="button os-info--button" href="#">Скачать приложение</a>
-        <ul class="os-info__list">
-          <li class="os-info__item os-info__item--apple"></li>
-          <li class="os-info__item os-info__item--android"></li>
-          <li class="os-info__item os-info__item--windows"></li>
-        </ul>
-        <p class="os-info__availability">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </div>
+        <div class="os-info__description-wrapper">
+          </dir>
+          <b class="os-info__title">Взгляните на жизнь иначе!</b>
+          <a class="button os-info--button" href="#">Скачать приложение</a>
+          <ul class="os-info__list">
+            <li class="os-info__item os-info__item--apple"></li>
+            <li class="os-info__item os-info__item--android"></li>
+            <li class="os-info__item os-info__item--windows"></li>
+          </ul>
+          <p class="os-info__availability">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
     </section>
   </header>
   <main class="page-main">
@@ -86,6 +87,9 @@
         <div class="advantages__img-list">
           <div class="advantages__img-item">
             <picture class="advantages__img-item-wrapper">
+              <source type="image/webp" media="(min-width:960px)" srcset="img/webp/iphone-screen-3-desktop@1x.webp 1x, img/webp/iphone-screen-3-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width:660px)" srcset="img/webp/iphone-screen-3-tablet@1x.webp 1x, img/webp/iphone-screen-3-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/webp/iphone-screen-mobile@1x.webp 1x, img/webp/iphone-screen-mobile@2x.webp 2x">
               <source media="(min-width:960px)" srcset="img/iphone-screen-3-desktop@1x.png 1x, img/iphone-screen-3-desktop@2x.png 2x">
               <source media="(min-width:660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
               <img src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" alt="Скриншот айфона">
@@ -93,12 +97,16 @@
           </div>
           <div class="advantages__img-item advantages__img-item--hidden">
             <picture class="advantages__img-item-wrapper">
+              <source type="image/webp" media="(min-width:960px)" srcset="img/webp/iphone-screen-2-desktop@1x.webp 1x, img/webp/iphone-screen-2-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/webp/iphone-screen-2-tablet@1x.webp 1x, img/webp/iphone-screen-2-tablet@2x.webp 2x">
               <source media="(min-width:960px)" srcset="img/iphone-screen-2-desktop@1x.png 1x, img/iphone-screen-2-desktop@2x.png 2x">
               <img src="img/iphone-screen-2-tablet@1x.png" srcset="img/iphone-screen-2-tablet@2x.png 2x" alt="Скриншот айфона">
             </picture>
           </div>
           <div class="advantages__img-item advantages__img-item--hidden">
             <picture class="advantages__img-item-wrapper">
+              <source type="image/webp" media="(min-width:960px)" srcset="img/webp/iphone-screen-1-desktop@1x.webp 1x, img/webp/iphone-screen-1-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/webp/iphone-screen-1-tablet@1x.webp 1x, img/webp/iphone-screen-1-tablet@2x.webp 2x" alt="Скриншот айфона">
               <source media="(min-width:960px)" srcset="img/iphone-screen-1-desktop@1x.png 1x, img/iphone-screen-1-desktop@2x.png 2x">
               <img src="img/iphone-screen-1-tablet@1x.png" srcset="img/iphone-screen-1-tablet@2x.png 2x" alt="Скриншот айфона">
             </picture>
@@ -214,7 +222,7 @@
         <h2>Контакты</h2>
       </header>
       <div class="contacts__wrapper">
-        <b class="contacts__title">Остались вопросы?Свяжитесь с нами!</b>
+        <b class="contacts__title">Остались вопросы? Свяжитесь с нами!</b>
         <p class="contacts__text contacts__text--telefon">
           Звоните:
           <a class="contacts__link">+7 (812) 555-66-66</a>
@@ -231,7 +239,6 @@
       <div class="contacts__map">
         <div class="contacts__map-triangle"></div>
       </div>
-
     </section>
   </main>
   <footer class="footer footer--mobile">
