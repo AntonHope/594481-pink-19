@@ -3,6 +3,7 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
   <script src="js/picturefill.js"></script>
   <script src="js/svgxuse.js" defer></script>
@@ -130,20 +131,20 @@
   </svg>
   <header class="page-header">
     <div class="page-header__wrapper">
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active-first">
               <a class="page-header__logo">
                 <svg class="page-header__logo-image" width="75" height="22">
-                  <use xlink:href="img/sprite.svg#page-header__logo-mobile"></use>
+                  <use xlink:href="#page-header__logo-mobile"></use>
                 </svg>
                 <svg class="page-header__logo-image" width="147" height="40">
-                  <use xlink:href="img/sprite.svg#page-header__logo-tablet"></use>
+                  <use xlink:href="#page-header__logo-tablet"></use>
                 </svg>
                 <svg class="page-header__logo-image" width="147" height="40">
-                  <use xlink:href="img/sprite.svg#page-header__logo-desktop"></use>
+                  <use xlink:href="#page-header__logo-desktop"></use>
                 </svg>
               </a>
             </li>
@@ -168,18 +169,12 @@
       <div class="os-info__description">
         <div class="os-info__description-wrapper">
           <b class="os-info__title">Взгляните на жизнь иначе!</b>
-          <a class="button os-info--button" href="https://apps.apple.com">Скачать приложение</a>
-          <ul class="os-info__list">
-            <a href="https://apps.apple.com">
-              <li class="os-info__item os-info__item--apple"></li>
-            </a>
-            <a href="https://play.google.com/store">
-              <li class="os-info__item os-info__item--android"></li>
-            </a>
-            <a href="https://www.microsoft.com/ru-ru/store/apps">
-              <li class="os-info__item os-info__item--windows"></li>
-            </a>
-          </ul>
+          <a class="os-info__button button" href="https://apps.apple.com">Скачать приложение</a>
+          <div class="os-info__list">
+            <a class="os-info__item os-info__item--apple" href="https://apps.apple.com" aria-label="Перейти в app store"></a>
+            <a class="os-info__item os-info__item--android" href="https://play.google.com/store" aria-label="Перейти в google play"></a>
+            <a class="os-info__item os-info__item--windows" href="https://www.microsoft.com/ru-ru/store/apps" aria-label="Перейти в app microsoft store"></a>
+          </div>
           <p class="os-info__availability">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </div>
@@ -295,7 +290,7 @@
         </div>
       </div>
     </section>
-    <section class="price">
+    <section class="price slider">
       <header>
         <h2 class="visually-hidden">Наши цены</h2>
       </header>
@@ -352,7 +347,7 @@
         </p>
         <p class="contacts__text contacts__text--email">
           Пишите:
-          <a class="contacts__link">mail@htmlacademy.ru</a>
+          <a href="#" class="contacts__link">mail@htmlacademy.ru</a>
         </p>
         <p class="contacts__text contacts__text--adress">
           Приезжайте в гости:
@@ -360,30 +355,30 @@
         </p>
       </div>
       <div class="contacts__map">
-        <div class="contacts__map-triangle"></div>
+        <iframe class="contacts__map-area" src="https://yandex.ru/map-widget/v1/?um=constructor%3A9a7c4be9acb01fff4828206245ae4c86e9d27c053c77aceddeecdb69afa4122b&amp;source=constructor"></iframe>
       </div>
     </section>
   </main>
   <footer class="footer footer--mobile">
     <h2 class="visually-hidden">footer</h2>
     <div class="footer__wrapper">
-      <a class="page-footer__logo">
+      <a class="footer__logo">
         <svg class="footer__logo-image" width="147" height="40">
-          <use xlink:href="img/sprite.svg#footer__logo-small"></use>
+          <use xlink:href="#footer__logo-small"></use>
         </svg>
         <svg class="footer__logo-image" width="147" height="40">
-          <use xlink:href="img/sprite.svg#footer__logo-big"></use>
+          <use xlink:href="#footer__logo-big"></use>
         </svg>
       </a>
-      <ul class="footer__social-list">
-        <li class="footer__social-item footer__social-item--vk"></li>
-        <li class="footer__social-item footer__social-item--fb"></li>
-        <li class="footer__social-item footer__social-item--yt"></li>
-      </ul>
+      <div class="footer__social-list">
+        <a href="https://twitter.com/" class="footer__social-item" aria-label="перейти в twitter"></a>
+        <a href="https://www.facebook.com/" class="footer__social-item" aria-label="перейти в facebook"></a>
+        <a href="https://www.youtube.com/" class="footer__social-item" aria-label="перейти в youtube"></a>
+      </div>
       <div class="footer__copyright">
         <p class="footer__copyright-text">Разработано</p>
         <svg class="footer__copyright-html-logo" width="41" height="41">
-          <use xlink:href="img/sprite.svg#footer__html-logo"></use>
+          <use xlink:href="#footer__html-logo"></use>
         </svg>
       </div>
     </div>

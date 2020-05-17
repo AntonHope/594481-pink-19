@@ -3,6 +3,7 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
   <script src="js/picturefill.js"></script>
   <script src="js/svgxuse.js" defer></script>
@@ -130,20 +131,20 @@
   </svg>
   <header class="page-header">
     <div class="page-header__wrapper">
-      <nav class="main-nav main-nav--closed">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active-first">
-              <a class="page-header__logo" href="index.html">
+              <a class="page-header__logo" href="index.html" aria-label="Перейти на главную страницу">
                 <svg class="page-header__logo-image page-header__logo-image--staff" width="75" height="22">
-                  <use xlink:href="img/sprite.svg#page-header__logo-mobile"></use>
+                  <use xlink:href="#page-header__logo-mobile"></use>
                 </svg>
                 <svg class="page-header__logo-image page-header__logo-image--staff" width="147" height="40">
-                  <use xlink:href="img/sprite.svg#page-header__logo-tablet"></use>
+                  <use xlink:href="#page-header__logo-tablet"></use>
                 </svg>
                 <svg class="page-header__logo-image page-header__logo-image--staff" width="147" height="40">
-                  <use xlink:href="img/sprite.svg#page-header__logo-desktop"></use>
+                  <use xlink:href="#page-header__logo-desktop"></use>
                 </svg>
               </a>
             </li>
@@ -173,6 +174,7 @@
       <div class="photo__wrapper">
         <b class="photo__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</b>
         <div class="photo__best">
+          <a class="photo__link-best" href="img/panorama-desktop@2x.jpg">
           <picture class="photo__best-wrapper">
             <source type="image/webp" media="(min-width:960px)" srcset="img/webp/panorama-desktop@1x.webp 1x, img/webp/panorama-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width:660px)" srcset="img/webp/panorama-tablet@1x.webp 1x, img/webp/panorama-tablet@2x.webp 2x">
@@ -181,6 +183,7 @@
             <source media="(min-width:660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
             <img class="photo__best-img" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="user-photo">
           </picture>
+          </a>
           <div class="photo__best-description">
             <b class="photo__best-autor">Анна <span class="photo__timer">(5 минут назад)</span></b>
             <p class="photo__best-comment">
@@ -191,6 +194,7 @@
         </div>
         <ul class="photo__list">
           <li class="photo__item">
+            <a class="photo__link" href="img/photo-car-desktop@2x.jpg">
             <picture class="photo__img-wapper">
               <source type="image/webp" media="(min-width:960px)" srcset="img/webp/photo-car-desktop@1x.webp 1x, img/webp/photo-car-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width:660px)" srcset="img/webp/photo-car-tablet@1x.webp 1x, img/webp/photo-car-tablet@2x.webp 2x">
@@ -199,6 +203,7 @@
               <source media="(min-width:660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
               <img class="photo__img" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="user-photo">
             </picture>
+            </a>
             <div class="photo__description">
               <b class="photo__autor">Левон <span class="photo__timer">(5 часов назад)</span></b>
               <p class="photo__comment">
@@ -208,6 +213,7 @@
             </div>
           </li>
           <li class="photo__item">
+            <a class="photo__link" href="img/photo-drumset-desktop@2x.jpg">
             <picture class="photo__img-wapper">
               <source type="image/webp" media="(min-width:960px)" srcset="img/webp/photo-drumset-desktop@1x.webp 1x, img/webp/photo-drumset-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width:660px)" srcset="img/webp/photo-drumset-tablet@1x.webp 1x, img/webp/photo-drumset-tablet@2x.webp 2x">
@@ -216,6 +222,7 @@
               <source media="(min-width:660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
               <img class="photo__img" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="user-photo">
             </picture>
+            </a>
             <div class="photo__description">
               <b class="photo__autor">Антон <span class="photo__timer">(12 часов назад)</span></b>
               <p class="photo__comment">
@@ -225,14 +232,16 @@
             </div>
           </li>
           <li class="photo__item">
+            <a class="photo__link" href="img/photo-window-desktop@2x.jpg">
             <picture class="photo__img-wapper">
               <source type="image/webp" media="(min-width:960px)" srcset="img/webp/photo-window-desktop@1x.webp 1x, img/webp/photo-window-desktop@1x.webp 2x">
               <source type="image/webp" media="(min-width:660px)" srcset="img/webp/photo-window-tablet@1x.webp 1x, img/webp/photo-window-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/webp/photo-window-mobile@1x.webp 1x, img/webp/photo-window-mobile@2x.webp 2x">
-              <source media="(min-width:960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@1x.jpg 2x">
+              <source media="(min-width:960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
               <source media="(min-width:660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
               <img class="photo__img" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="user-photo">
             </picture>
+            </a>
             <div class="photo__description">
               <b class="photo__autor">Борис <span class="photo__timer">(20 часов назад)</span></b>
               <p class="photo__comment">
@@ -242,6 +251,7 @@
             </div>
           </li>
           <li class="photo__item">
+            <a class="photo__link" href="img/photo-fair-desktop@2x.jpg">
             <picture class="photo__img-wapper">
               <source type="image/webp" media="(min-width:960px)" srcset="img/webp/photo-fair-desktop@1x.webp 1x, img/webp/photo-fair-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width:660px)" srcset="img/webp/photo-fair-tablet@1x.webp 1x, img/webp/photo-fair-tablet@2x.webp 2x">
@@ -250,6 +260,7 @@
               <source media="(min-width:660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
               <img class="photo__img" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="user-photo">
             </picture>
+            </a>
             <div class="photo__description">
               <b class="photo__autor">Сергей <span class="photo__timer">(25 часов назад)</span></b>
               <p class="photo__comment">
@@ -259,6 +270,7 @@
             </div>
           </li>
           <li class="photo__item">
+            <a class="photo__link" href="img/photo-pov-desktop@2x.jpg">
             <picture class="photo__img-wapper">
               <source type="image/webp" media="(min-width:960px)" srcset="img/webp/photo-pov-desktop@1x.webp 1x, img/webp/photo-pov-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width:660px)" srcset="img/webp/photo-pov-tablet@1x.webp 1x, img/webp/photo-pov-tablet@2x.webp 2x">
@@ -267,6 +279,7 @@
               <source media="(min-width:660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
               <img class="photo__img" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="user-photo">
             </picture>
+            </a>
             <div class="photo__description">
               <b class="photo__autor">Максим <span class="photo__timer">(40 часов назад)</span></b>
               <p class="photo__comment">
@@ -276,6 +289,7 @@
             </div>
           </li>
           <li class="photo__item">
+            <a class="photo__link" href="img/photo-wing-desktop@2x.jpg">
             <picture class="photo__img-wapper">
               <source type="image/webp" media="(min-width:960px)" srcset="img/webp/photo-wing-desktop@1x.webp 1x, img/webp/photo-wing-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width:660px)" srcset="img/webp/photo-wing-tablet@1x.webp 1x, img/webp/photo-wing-tablet@2x.webp 2x">
@@ -284,6 +298,7 @@
               <source media="(min-width:660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
               <img class="photo__img" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="user-photo">
             </picture>
+            </a>
             <div class="photo__description">
               <b class="photo__autor">Надежда <span class="photo__timer">(45 часов назад)</span></b>
               <p class="photo__comment">
@@ -295,7 +310,7 @@
         </ul>
       </div>
     </section>
-    <section class="download">
+    <form class="download" action="https://echo.htmlacademy.ru" method="post">
       <h2 class="visually-hidden">Загрузи свою фотографию</h2>
       <div class="download__title-wrapper">
         <b class="download__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</b>
@@ -310,23 +325,23 @@
           <img src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="user-photo">
         </picture>
         <div class="download__container">
-          <input type="radio" name="settings" id="crop" checked>
-          <input type="radio" name="settings" id="fill">
-          <input type="radio" name="settings" id="contrast">
+          <input class="download__area" type="radio" name="settings" id="crop" checked>
+          <input class="download__area" type="radio" name="settings" id="fill">
+          <input class="download__area" type="radio" name="settings" id="contrast">
           <div class="download__list">
             <label class="download__item" for="crop">
               <svg class="download__item-img" width="48" height="48">
-                <use xlink:href="img/sprite.svg#download__item-crop"></use>
+                <use xlink:href="#download__item-crop"></use>
               </svg>
             </label>
             <label class="download__item" for="fill">
               <svg class="download__item-img" width="48" height="43">
-                <use xlink:href="img/sprite.svg#download__item-fill"></use>
+                <use xlink:href="#download__item-fill"></use>
               </svg>
             </label>
             <label class="download__item" for="contrast">
               <svg class="download__item-img" width="32" height="32">
-                <use xlink:href="img/sprite.svg#download__item-contrast"></use>
+                <use xlink:href="#download__item-contrast"></use>
               </svg>
             </label>
           </div>
@@ -339,33 +354,33 @@
             </div>
           </div>
           <div class="download__button-wrapper">
-            <a class="download__button button" href="#">Запостить</a>
-            <a class="download__button-cancel button" href="#">Отмена</a>
+            <button class="download__button button" type="submit">Запостить</button>
+            <button class="download__button-cancel button" type="reset">Отмена</button>
           </div>
         </div>
       </div>
-    </section>
+    </form>
   </main>
   <footer class="footer">
     <h2 class="visually-hidden">footer</h2>
     <div class="footer__wrapper">
       <a href="index.html" class="page-footer__logo">
         <svg class="footer__logo-image" width="147" height="40">
-          <use xlink:href="img/sprite.svg#footer__logo-small"></use>
+          <use xlink:href="#footer__logo-small"></use>
         </svg>
         <svg class="footer__logo-image" width="147" height="40">
-          <use xlink:href="img/sprite.svg#footer__logo-big"></use>
+          <use xlink:href="#footer__logo-big"></use>
         </svg>
       </a>
       <div class="footer__social-list">
-        <a class="footer__social-item"></a>
-        <a class="footer__social-item"></a>
-        <a class="footer__social-item"></a>
+        <a href="https://twitter.com/" class="footer__social-item" aria-label="перейти в twitter"></a>
+        <a href="https://www.facebook.com/" class="footer__social-item" aria-label="перейти в facebook"></a>
+        <a href="https://www.youtube.com/" class="footer__social-item" aria-label="перейти в youtube"></a>
       </div>
       <div class="footer__copyright">
         <p class="footer__copyright-text">Разработано</p>
         <svg class="footer__copyright-html-logo" width="41" height="41">
-          <use xlink:href="img/sprite.svg#footer__html-logo"></use>
+          <use xlink:href="#footer__html-logo"></use>
         </svg>
       </div>
     </div>

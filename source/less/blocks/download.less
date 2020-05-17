@@ -141,8 +141,22 @@
   left: 121px;
 }
 
-.download__container input {
-  display: none;
+.download__area {
+  position: absolute;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip-path: inset(100%);
 }
 
 #crop:checked ~ .download__range-list .download__range-item:nth-of-type(1) {
@@ -191,11 +205,12 @@
 }
 
 .download__button {
-  width: 244px;
+  width: 280px;
   margin-top: 50px;
-
+  background-color: @bg-grey;
   color: @pink;
   border-color: @pink;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -210,12 +225,13 @@
 }
 
 .download__button-cancel {
-  width: 244px;
+  width: 280px;
   margin-top: 13px;
 
   color: rgb(221, 223, 224);
   border-color: rgb(221, 223, 224);
   background-color: inherit;
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -231,6 +247,12 @@
 }
 
 @media (min-width: @tablet-width) {
+  #crop:checked ~ .download__range-list .download__range-item,
+  #fill:checked ~ .download__range-list .download__range-item,
+  #contrast:checked ~ .download__range-list .download__range-item {
+    display: block;
+  }
+
   .download__item-img {
     display: none;
   }
@@ -369,7 +391,7 @@
 
   .download__button,
   .download__button-cancel {
-    width: 223px;
+    width: 258px;
     padding-right: 17px;
     padding-left: 10px;
 
@@ -472,7 +494,7 @@
 
   .download__button,
   .download__button-cancel {
-    width: 148px;
+    width: 184px;
     margin: 0;
     padding-right: 13px;
     padding-left: 17px;
