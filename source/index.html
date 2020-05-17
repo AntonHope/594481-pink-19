@@ -3,6 +3,9 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
   <script src="js/picturefill.js"></script>
@@ -294,9 +297,9 @@
       <header>
         <h2 class="visually-hidden">Наши цены</h2>
       </header>
-      <input class="slider__toggle-hidden" type="radio" name="price__slide" id="price__slide-1">
-      <input class="slider__toggle-hidden" type="radio" name="price__slide" id="price__slide-2" checked>
-      <input class="slider__toggle-hidden" type="radio" name="price__slide" id="price__slide-3">
+      <input class="slider__toggle-hidden price__slide-base" type="radio" name="price__slide" id="price__slide-1">
+      <input class="slider__toggle-hidden price__slide-standart" type="radio" name="price__slide" id="price__slide-2" checked>
+      <input class="slider__toggle-hidden price__slide-unlim" type="radio" name="price__slide" id="price__slide-3">
       <div class="price__slider-controls slider__controls">
         <label class="slider__toggle" for="price__slide-1"></label>
         <label class="slider__toggle" for="price__slide-2"></label>

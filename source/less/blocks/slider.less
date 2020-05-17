@@ -54,19 +54,19 @@
 }
 
 
-#slide-1:checked ~ .slider__list .slider__item:nth-of-type(1) {
+.slider__toggle-hidden:nth-of-type(1):checked ~ .slider__list .slider__item:nth-of-type(1) {
   display: flex;
 }
 
-#slide-2:checked ~ .slider__list .slider__item:nth-of-type(2) {
+.slider__toggle-hidden:nth-of-type(2):checked ~ .slider__list .slider__item:nth-of-type(2) {
   display: flex;
 }
 
-#slide-3:checked ~ .slider__list .slider__item:nth-of-type(3) {
+.slider__toggle-hidden:nth-of-type(3):checked ~ .slider__list .slider__item:nth-of-type(3) {
   display: flex;
 }
 
-#slide-1:checked ~ .slider__controls .slider__toggle:nth-of-type(1) {
+.slider__toggle-hidden:nth-of-type(1):checked ~ .slider__controls .slider__toggle:nth-of-type(1) {
   &::after {
     position: absolute;
     top: -3px;
@@ -83,7 +83,7 @@
   }
 }
 
-#slide-2:checked ~ .slider__controls .slider__toggle:nth-of-type(2) {
+.slider__toggle-hidden:nth-of-type(2):checked ~ .slider__controls .slider__toggle:nth-of-type(2) {
   &::after {
     position: absolute;
     top: -3px;
@@ -100,7 +100,7 @@
   }
 }
 
-#slide-3:checked ~ .slider__controls .slider__toggle:nth-of-type(3) {
+.slider__toggle-hidden:nth-of-type(3):checked ~ .slider__controls .slider__toggle:nth-of-type(3) {
   &::after {
     position: absolute;
     top: -3px;

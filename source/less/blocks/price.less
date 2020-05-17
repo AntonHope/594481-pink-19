@@ -17,19 +17,19 @@
   order: 1;
 }
 
-#price__slide-1:checked ~ .price__table .price__table-wrapper {
+.price__slide-base:checked ~ .price__table .price__table-wrapper {
   transform: translate(0);
 }
 
-#price__slide-2:checked ~ .price__table .price__table-wrapper {
+.price__slide-standart:checked ~ .price__table .price__table-wrapper {
   transform: translate(-258px);
 }
 
-#price__slide-3:checked ~ .price__table .price__table-wrapper {
+.price__slide-unlim:checked ~ .price__table .price__table-wrapper {
   transform: translate(-520px);
 }
 
-#price__slide-1:checked ~ .price__slider-controls .slider__toggle:nth-of-type(1) {
+.price__slide-base:checked ~ .price__slider-controls .slider__toggle:nth-of-type(1) {
   &::after {
     position: absolute;
     top: -3px;
@@ -46,7 +46,7 @@
   }
 }
 
-#price__slide-2:checked ~ .price__slider-controls .slider__toggle:nth-of-type(2) {
+.price__slide-standart:checked ~ .price__slider-controls .slider__toggle:nth-of-type(2) {
   &::after {
     position: absolute;
     top: -3px;
@@ -63,7 +63,7 @@
   }
 }
 
-#price__slide-3:checked ~ .price__slider-controls .slider__toggle:nth-of-type(3) {
+.price__slide-unlim:checked ~ .price__slider-controls .slider__toggle:nth-of-type(3) {
   &::after {
     position: absolute;
     top: -3px;
@@ -248,15 +248,15 @@
 }
 
 @media (min-width: @tablet-width) {
-  #price__slide-1:checked ~ .price__table .price__table-wrapper {
+  .price__slide-base:checked ~ .price__table .price__table-wrapper {
     transform: translate(0);
   }
 
-  #price__slide-2:checked ~ .price__table .price__table-wrapper {
+  .price__slide-standart:checked ~ .price__table .price__table-wrapper {
     transform: translate(0);
   }
 
-  #price__slide-3:checked ~ .price__table .price__table-wrapper {
+  .price__slide-unlim:checked ~ .price__table .price__table-wrapper {
     transform: translate(0);
   }
 

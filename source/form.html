@@ -3,6 +3,9 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
   <script src="js/picturefill.js"></script>
@@ -211,27 +214,27 @@
             <legend class="form__achievements-title">Ваши безбашенные достижения в путешествии</legend>
             <ul class="form__achievements-list">
               <li class="form__achievements-item">
-                <input type="checkbox" name="selfi" id="selfi" checked>
+                <input class="form__achievements-selfi" type="checkbox" name="selfi" id="selfi" checked>
                 <label class="form__achievements-label form__achievements-label--selfi" for="selfi">Сделал селфи с акулой</label>
               </li>
               <li class="form__achievements-item">
-                <input type="checkbox" name="beech" id="beech" checked>
+                <input class="form__achievements-beech" type="checkbox" name="beech" id="beech" checked>
                 <label class="form__achievements-label form__achievements-label--beech" for="beech">Обгорел на пляже</label>
               </li>
               <li class="form__achievements-item">
-                <input type="checkbox" name="chuck" id="chuck">
+                <input class="form__achievements-chuck" type="checkbox" name="chuck" id="chuck">
                 <label class="form__achievements-label form__achievements-label--chuck" for="chuck">Видел Чака Норриса</label>
               </li>
               <li class="form__achievements-item">
-                <input type="checkbox" name="souvenirs" id="souvenirs">
+                <input class="form__achievements-souvenirs" type="checkbox" name="souvenirs" id="souvenirs">
                 <label class="form__achievements-label form__achievements-label--souvenirs" for="souvenirs">Накупил сувениров</label>
               </li>
               <li class="form__achievements-item">
-                <input type="checkbox" name="tower" id="tower" checked>
+                <input class="form__achievements-tower" type="checkbox" name="tower" id="tower" checked>
                 <label class="form__achievements-label form__achievements-label--tower" for="tower">Удержал башню</label>
               </li>
               <li class="form__achievements-item">
-                <input type="checkbox" name="hotel" id="hotel">
+                <input class="form__achievements-hotel" type="checkbox" name="hotel" id="hotel">
                 <label class="form__achievements-label form__achievements-label--hotel" for="hotel">Разгромил отель</label>
               </li>
             </ul>

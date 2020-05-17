@@ -3,6 +3,9 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.min.css">
   <script src="js/picturefill.js"></script>
@@ -330,17 +333,17 @@
           <input class="download__area" type="radio" name="settings" id="contrast">
           <div class="download__list">
             <label class="download__item" for="crop">
-              <svg class="download__item-img" width="48" height="48">
+              <svg class="download__item-img download__item-img--crop" width="48" height="48">
                 <use xlink:href="#download__item-crop"></use>
               </svg>
             </label>
             <label class="download__item" for="fill">
-              <svg class="download__item-img" width="48" height="43">
+              <svg class="download__item-img download__item-img--fill" width="48" height="43">
                 <use xlink:href="#download__item-fill"></use>
               </svg>
             </label>
             <label class="download__item" for="contrast">
-              <svg class="download__item-img" width="32" height="32">
+              <svg class="download__item-img download__item-img--contrast" width="32" height="32">
                 <use xlink:href="#download__item-contrast"></use>
               </svg>
             </label>
