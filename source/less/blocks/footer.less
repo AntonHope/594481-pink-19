@@ -19,15 +19,14 @@
 .footer__social-list {
   display: flex;
   flex-direction: row;
-
+  flex-wrap: wrap;
+  max-width: 178px;
 
   margin: 0;
   margin-top: 33px;
   padding: 0;
 
   list-style: none;
-
-  justify-content: space-between;
 }
 
 .footer__social-item {
@@ -92,6 +91,14 @@
   &:active {
     opacity: 0.5;
     border: 3px solid rgb(233, 235, 236);
+  }
+
+  &:nth-of-type(3n) {
+    margin-right: 0;
+  }
+
+  &:nth-of-type(1n+4) {
+    margin-top: 20px;
   }
 }
 
@@ -210,6 +217,25 @@
   .footer__social-list {
     margin-top: 10px;
     margin-right: -16px;
+    max-width: 400px;
+  }
+
+  .footer__social-item {
+    &:nth-of-type(3n) {
+      margin-right: 10px;
+    }
+
+    &:nth-of-type(1n-6) {
+      margin-top: 0;
+    }
+
+    &:nth-of-type(6n) {
+      margin-right: 0;
+    }
+
+    &:nth-of-type(1n+7) {
+      margin-top: 20px;
+    }
   }
 
   .footer__copyright {
